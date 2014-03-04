@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Mar 04 20:24:38 2014
+Quartus II Version : 9.1 Build 222 10/21/2009 SJ Full Version
+Revision Name : vga_d
+Top-level Entity Name : vga_d
+Family : Cyclone III
+Total logic elements : 868
+    Total combinational functions : 867
+    Dedicated logic registers : 182
+Total registers : 182
+Total pins : 15
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 8
+Total PLLs : 0
