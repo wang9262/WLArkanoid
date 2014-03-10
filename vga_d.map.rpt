@@ -1,5 +1,5 @@
 Analysis & Synthesis report for vga_d
-Tue Mar 04 20:24:38 2014
+Mon Mar 10 10:58:14 2014
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -21,13 +21,15 @@ Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
  13. Inverted Register Statistics
  14. Multiplexer Restructuring Statistics (Restructuring Performed)
  15. Parameter Settings for User Entity Instance: VGA_display:dis
- 16. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult2
- 17. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult3
- 18. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult0
- 19. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult1
- 20. lpm_mult Parameter Settings by Entity Instance
- 21. Analysis & Synthesis Messages
- 22. Analysis & Synthesis Suppressed Messages
+ 16. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult0
+ 17. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult1
+ 18. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult2
+ 19. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult3
+ 20. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult4
+ 21. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult5
+ 22. lpm_mult Parameter Settings by Entity Instance
+ 23. Analysis & Synthesis Messages
+ 24. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -53,19 +55,19 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 04 20:24:38 2014    ;
+; Analysis & Synthesis Status        ; Successful - Mon Mar 10 10:58:14 2014    ;
 ; Quartus II Version                 ; 9.1 Build 222 10/21/2009 SJ Full Version ;
 ; Revision Name                      ; vga_d                                    ;
 ; Top-level Entity Name              ; vga_d                                    ;
 ; Family                             ; Cyclone III                              ;
-; Total logic elements               ; 868                                      ;
-;     Total combinational functions  ; 867                                      ;
-;     Dedicated logic registers      ; 182                                      ;
-; Total registers                    ; 182                                      ;
-; Total pins                         ; 15                                       ;
+; Total logic elements               ; 1,150                                    ;
+;     Total combinational functions  ; 1,138                                    ;
+;     Dedicated logic registers      ; 237                                      ;
+; Total registers                    ; 237                                      ;
+; Total pins                         ; 23                                       ;
 ; Total virtual pins                 ; 0                                        ;
 ; Total memory bits                  ; 0                                        ;
-; Embedded Multiplier 9-bit elements ; 8                                        ;
+; Embedded Multiplier 9-bit elements ; 12                                       ;
 ; Total PLLs                         ; 0                                        ;
 +------------------------------------+------------------------------------------+
 
@@ -168,17 +170,18 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                   ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+
-; vga_d.v                          ; yes             ; User Verilog HDL File        ; D:/zhuangqiu/vga_d.v                                                 ;
-; VGA_display.v                    ; yes             ; User Verilog HDL File        ; D:/zhuangqiu/VGA_display.v                                           ;
-; VGA_sm.v                         ; yes             ; User Verilog HDL File        ; D:/zhuangqiu/VGA_sm.v                                                ;
-; lpm_mult.tdf                     ; yes             ; Megafunction                 ; d:/win8software/quartus/quartus/libraries/megafunctions/lpm_mult.tdf ;
-; db/mult_g4t.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/zhuangqiu/db/mult_g4t.tdf                                         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                     ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                           ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------+
+; ps2_top.v                        ; yes             ; User Verilog HDL File        ; D:/zhuangqiu/ps2_top.v                                 ;
+; vga_d.v                          ; yes             ; User Verilog HDL File        ; D:/zhuangqiu/vga_d.v                                   ;
+; VGA_display.v                    ; yes             ; User Verilog HDL File        ; D:/zhuangqiu/VGA_display.v                             ;
+; VGA_sm.v                         ; yes             ; User Verilog HDL File        ; D:/zhuangqiu/VGA_sm.v                                  ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                 ; d:/altera/quartus/libraries/megafunctions/lpm_mult.tdf ;
+; db/mult_g4t.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/zhuangqiu/db/mult_g4t.tdf                           ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------+
 
 
 +-----------------------------------------------------------+
@@ -186,28 +189,28 @@ applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 868         ;
+; Estimated Total logic elements              ; 1,150       ;
 ;                                             ;             ;
-; Total combinational functions               ; 867         ;
+; Total combinational functions               ; 1138        ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 316         ;
-;     -- 3 input functions                    ; 311         ;
-;     -- <=2 input functions                  ; 240         ;
+;     -- 4 input functions                    ; 460         ;
+;     -- 3 input functions                    ; 388         ;
+;     -- <=2 input functions                  ; 290         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 477         ;
-;     -- arithmetic mode                      ; 390         ;
+;     -- normal mode                          ; 660         ;
+;     -- arithmetic mode                      ; 478         ;
 ;                                             ;             ;
-; Total registers                             ; 182         ;
-;     -- Dedicated logic registers            ; 182         ;
+; Total registers                             ; 237         ;
+;     -- Dedicated logic registers            ; 237         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 15          ;
-; Embedded Multiplier 9-bit elements          ; 8           ;
+; I/O pins                                    ; 23          ;
+; Embedded Multiplier 9-bit elements          ; 12          ;
 ; Maximum fan-out node                        ; reset~input ;
-; Maximum fan-out                             ; 158         ;
-; Total fan-out                               ; 3309        ;
-; Average fan-out                             ; 3.04        ;
+; Maximum fan-out                             ; 206         ;
+; Total fan-out                               ; 4426        ;
+; Average fan-out                             ; 3.09        ;
 +---------------------------------------------+-------------+
 
 
@@ -216,8 +219,8 @@ applicable agreement for further details.
 +------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                           ; Library Name ;
 +------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------+
-; |vga_d                             ; 867 (46)          ; 182 (34)     ; 0           ; 8            ; 0       ; 4         ; 15   ; 0            ; |vga_d                                                        ; work         ;
-;    |VGA_display:dis|               ; 722 (722)         ; 82 (82)      ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |vga_d|VGA_display:dis                                        ;              ;
+; |vga_d                             ; 1138 (46)         ; 237 (34)     ; 0           ; 12           ; 0       ; 6         ; 23   ; 0            ; |vga_d                                                        ; work         ;
+;    |VGA_display:dis|               ; 904 (904)         ; 112 (112)    ; 0           ; 12           ; 0       ; 6         ; 0    ; 0            ; |vga_d|VGA_display:dis                                        ;              ;
 ;       |lpm_mult:Mult0|             ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_mult:Mult0                         ;              ;
 ;          |mult_g4t:auto_generated| ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_mult:Mult0|mult_g4t:auto_generated ;              ;
 ;       |lpm_mult:Mult1|             ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_mult:Mult1                         ;              ;
@@ -226,7 +229,12 @@ applicable agreement for further details.
 ;          |mult_g4t:auto_generated| ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_mult:Mult2|mult_g4t:auto_generated ;              ;
 ;       |lpm_mult:Mult3|             ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_mult:Mult3                         ;              ;
 ;          |mult_g4t:auto_generated| ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_mult:Mult3|mult_g4t:auto_generated ;              ;
-;    |VGA_sm:sm|                     ; 99 (99)           ; 66 (66)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_sm:sm                                              ;              ;
+;       |lpm_mult:Mult4|             ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_mult:Mult4                         ;              ;
+;          |mult_g4t:auto_generated| ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_mult:Mult4|mult_g4t:auto_generated ;              ;
+;       |lpm_mult:Mult5|             ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_mult:Mult5                         ;              ;
+;          |mult_g4t:auto_generated| ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_mult:Mult5|mult_g4t:auto_generated ;              ;
+;    |VGA_sm:sm|                     ; 96 (96)           ; 66 (66)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_sm:sm                                              ;              ;
+;    |ps2_top:comb_154|              ; 92 (92)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|ps2_top:comb_154                                       ;              ;
 +------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -237,10 +245,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                             ; Number Used ;
 +---------------------------------------+-------------+
 ; Simple Multipliers (9-bit)            ; 0           ;
-; Simple Multipliers (18-bit)           ; 4           ;
+; Simple Multipliers (18-bit)           ; 6           ;
 ; Embedded Multiplier Blocks            ; --          ;
-; Embedded Multiplier 9-bit elements    ; 8           ;
-; Signed Embedded Multipliers           ; 4           ;
+; Embedded Multiplier 9-bit elements    ; 12          ;
+; Signed Embedded Multipliers           ; 6           ;
 ; Unsigned Embedded Multipliers         ; 0           ;
 ; Mixed Sign Embedded Multipliers       ; 0           ;
 ; Variable Sign Embedded Multipliers    ; 0           ;
@@ -272,8 +280,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------------------------------------------+---+
 ; Logic Cell Name                                        ;   ;
 +--------------------------------------------------------+---+
-; VGA_display:dis|Add21~0                                ;   ;
-; VGA_display:dis|Add29~0                                ;   ;
+; VGA_display:dis|Add34~0                                ;   ;
+; VGA_display:dis|Add42~0                                ;   ;
 ; Number of logic cells representing combinational loops ; 2 ;
 +--------------------------------------------------------+---+
 Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -292,18 +300,20 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; VGA_display:dis|block3_y[8,11,13..14,16..18,21..22,24..32]    ; Stuck at GND due to stuck port data_in   ;
 ; VGA_display:dis|block4_x[11,13..14,16..18,21..22,24..32]      ; Stuck at GND due to stuck port data_in   ;
 ; VGA_display:dis|block4_y[8,11,13..14,16..18,21..22,24..32]    ; Stuck at GND due to stuck port data_in   ;
-; VGA_display:dis|y[0]                                          ; Merged with VGA_display:dis|x[0]         ;
-; VGA_display:dis|y2[0]                                         ; Merged with VGA_display:dis|x[0]         ;
-; VGA_display:dis|x2[0]                                         ; Merged with VGA_display:dis|x[0]         ;
 ; VGA_display:dis|y1[0]                                         ; Merged with VGA_display:dis|x[0]         ;
+; VGA_display:dis|x2[0]                                         ; Merged with VGA_display:dis|x[0]         ;
+; VGA_display:dis|y2[0]                                         ; Merged with VGA_display:dis|x[0]         ;
+; VGA_display:dis|ball_centery[0]                               ; Merged with VGA_display:dis|x[0]         ;
+; VGA_display:dis|ball_centerx[0]                               ; Merged with VGA_display:dis|x[0]         ;
 ; VGA_display:dis|x1[0]                                         ; Merged with VGA_display:dis|x[0]         ;
-; VGA_display:dis|block1_x[0..1,3..4,9..10,12,15,19..20]        ; Merged with VGA_display:dis|block1_x[23] ;
+; VGA_display:dis|y[0]                                          ; Merged with VGA_display:dis|x[0]         ;
+; VGA_display:dis|block1_x[0..1,3..4]                           ; Merged with VGA_display:dis|block1_x[23] ;
 ; VGA_display:dis|block1_y[0,3..5,9..10,12,15,19..20,23]        ; Merged with VGA_display:dis|block1_x[23] ;
+; VGA_display:dis|block1_x[9..10,12,15,19..20]                  ; Merged with VGA_display:dis|block1_x[23] ;
 ; VGA_display:dis|block1_x[2,5]                                 ; Merged with VGA_display:dis|block1_x[6]  ;
 ; VGA_display:dis|block1_y[1..2,6]                              ; Merged with VGA_display:dis|block1_x[6]  ;
-; VGA_display:dis|block2_x[0..2]                                ; Merged with VGA_display:dis|block2_x[23] ;
+; VGA_display:dis|block2_x[0..2,6,9..10,12,15,19..20]           ; Merged with VGA_display:dis|block2_x[23] ;
 ; VGA_display:dis|block2_y[0,3..5,9..10,12,15,19..20,23]        ; Merged with VGA_display:dis|block2_x[23] ;
-; VGA_display:dis|block2_x[6,9..10,12,15,19..20]                ; Merged with VGA_display:dis|block2_x[23] ;
 ; VGA_display:dis|block2_x[7]                                   ; Merged with VGA_display:dis|block2_x[8]  ;
 ; VGA_display:dis|block2_x[3..4]                                ; Merged with VGA_display:dis|block2_x[5]  ;
 ; VGA_display:dis|block2_y[1..2,6]                              ; Merged with VGA_display:dis|block2_x[5]  ;
@@ -321,7 +331,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; VGA_display:dis|block3_x[6]                                   ; Stuck at VCC due to stuck port data_in   ;
 ; VGA_display:dis|block2_x[5]                                   ; Stuck at VCC due to stuck port data_in   ;
 ; VGA_display:dis|block1_x[6]                                   ; Stuck at VCC due to stuck port data_in   ;
-; Total Number of Removed Registers = 262                       ;                                          ;
+; Total Number of Removed Registers = 264                       ;                                          ;
 +---------------------------------------------------------------+------------------------------------------+
 
 
@@ -330,12 +340,12 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 182   ;
+; Total registers                              ; 237   ;
 ; Number of registers using Synchronous Clear  ; 34    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 145   ;
+; Number of registers using Asynchronous Clear ; 192   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 42    ;
+; Number of registers using Clock Enable       ; 64    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -345,40 +355,52 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +-----------------------------------------+---------+
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
-; VGA_display:dis|x_board[8]              ; 5       ;
-; VGA_display:dis|x_board[6]              ; 5       ;
 ; VGA_display:dis|x[5]                    ; 4       ;
 ; VGA_display:dis|x[4]                    ; 4       ;
-; VGA_display:dis|y[5]                    ; 4       ;
-; VGA_display:dis|y[4]                    ; 4       ;
-; VGA_display:dis|y[1]                    ; 4       ;
+; VGA_display:dis|y[5]                    ; 5       ;
+; VGA_display:dis|y[4]                    ; 5       ;
+; VGA_display:dis|y[1]                    ; 5       ;
 ; VGA_display:dis|x[1]                    ; 4       ;
-; VGA_display:dis|y2[7]                   ; 12      ;
-; VGA_display:dis|y2[8]                   ; 12      ;
-; VGA_display:dis|y2[6]                   ; 14      ;
-; VGA_display:dis|y2[1]                   ; 13      ;
-; VGA_display:dis|x2[4]                   ; 16      ;
-; VGA_display:dis|x2[9]                   ; 17      ;
-; VGA_display:dis|x2[6]                   ; 18      ;
-; VGA_display:dis|x2[3]                   ; 16      ;
+; VGA_display:dis|board_cx[7]             ; 5       ;
+; VGA_display:dis|board_cx[6]             ; 4       ;
+; VGA_display:dis|board_cx[5]             ; 4       ;
+; VGA_display:dis|board_cx[4]             ; 4       ;
+; VGA_display:dis|board_cx[3]             ; 4       ;
+; VGA_display:dis|board_cx[1]             ; 5       ;
+; VGA_display:dis|y2[6]                   ; 19      ;
+; VGA_display:dis|y2[7]                   ; 15      ;
+; VGA_display:dis|y2[8]                   ; 13      ;
+; VGA_display:dis|x_board[8]              ; 5       ;
+; VGA_display:dis|x_board[6]              ; 5       ;
+; VGA_display:dis|y2[1]                   ; 11      ;
+; VGA_display:dis|x2[6]                   ; 19      ;
+; VGA_display:dis|x2[3]                   ; 15      ;
+; VGA_display:dis|x2[4]                   ; 15      ;
+; VGA_display:dis|x2[9]                   ; 15      ;
+; VGA_display:dis|ball_centerx[1]         ; 3       ;
+; VGA_display:dis|ball_centerx[3]         ; 3       ;
+; VGA_display:dis|ball_centery[1]         ; 3       ;
+; VGA_display:dis|ball_centery[3]         ; 3       ;
 ; VGA_display:dis|x1[1]                   ; 4       ;
 ; VGA_display:dis|x1[4]                   ; 4       ;
 ; VGA_display:dis|x1[5]                   ; 4       ;
-; VGA_display:dis|y1[1]                   ; 3       ;
-; VGA_display:dis|y1[4]                   ; 3       ;
-; VGA_display:dis|y1[5]                   ; 3       ;
+; VGA_display:dis|y1[1]                   ; 4       ;
+; VGA_display:dis|y1[4]                   ; 4       ;
+; VGA_display:dis|y1[5]                   ; 4       ;
 ; VGA_sm:sm|Hs                            ; 2       ;
 ; VGA_sm:sm|Vs                            ; 2       ;
-; VGA_display:dis|block4_x[8]             ; 21      ;
-; VGA_display:dis|block3_y[7]             ; 6       ;
-; VGA_display:dis|block2_x[8]             ; 13      ;
+; VGA_display:dis|block4_x[8]             ; 22      ;
+; VGA_display:dis|block3_y[7]             ; 7       ;
+; VGA_display:dis|block2_x[8]             ; 10      ;
 ; VGA_display:dis|x_dir                   ; 12      ;
-; VGA_display:dis|y_dir                   ; 14      ;
-; VGA_display:dis|y_dir2                  ; 14      ;
-; VGA_display:dis|x_dir2                  ; 15      ;
+; VGA_display:dis|y_dir                   ; 12      ;
+; VGA_display:dis|y_dir2                  ; 16      ;
+; VGA_display:dis|x_dir2                  ; 14      ;
+; VGA_display:dis|ball_xdir               ; 13      ;
+; VGA_display:dis|ball_ydir               ; 14      ;
 ; VGA_display:dis|x_dir1                  ; 12      ;
-; VGA_display:dis|y_dir1                  ; 14      ;
-; Total number of inverted registers = 33 ;         ;
+; VGA_display:dis|y_dir1                  ; 12      ;
+; Total number of inverted registers = 45 ;         ;
 +-----------------------------------------+---------+
 
 
@@ -387,29 +409,134 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |vga_d|VGA_display:dis|n[2]        ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |vga_d|i[17]                       ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |vga_d|VGA_display:dis|x_board[1]  ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |vga_d|VGA_display:dis|n[0]        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |vga_d|i[15]                       ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |vga_d|VGA_display:dis|x_board[0]  ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 0 LEs                ; 8 LEs                  ; Yes        ; |vga_d|VGA_display:dis|board_cx[9] ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 0 LEs                ; 4 LEs                  ; Yes        ; |vga_d|VGA_display:dis|x_board[8]  ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |vga_d|VGA_display:dis|block4_x[8] ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 0 LEs                ; 12 LEs                 ; Yes        ; |vga_d|VGA_display:dis|board_cx[3] ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |vga_d|VGA_display:dis|block4_x[5] ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |vga_d|VGA_display:dis|block2_x[8] ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |vga_d|VGA_display:dis|block3_x[6] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |vga_d|VGA_display:dis|RGB0[5]     ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |vga_d|VGA_display:dis|block3_y[7] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |vga_d|VGA_display:dis|RGB0[3]     ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |vga_d|VGA_display:dis|RGB1        ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |vga_d|VGA_display:dis|RGB1[6]     ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |vga_d|VGA_display:dis|Mux2        ;
-; 9:1                ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |vga_d|VGA_display:dis|Mux7        ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |vga_d|VGA_display:dis|RGB1[0]     ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |vga_d|VGA_display:dis|Mux4        ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |vga_d|VGA_display:dis|Mux2        ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |vga_d|VGA_display:dis|Mux7        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
 
 
 +--------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: VGA_display:dis ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; y_board1       ; 479   ; Signed Integer                      ;
-; y_board2       ; 459   ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
++-------------------+-------+----------------------------------+
+; Parameter Name    ; Value ; Type                             ;
++-------------------+-------+----------------------------------+
+; x_left            ; 0     ; Signed Integer                   ;
+; x_right           ; 500   ; Signed Integer                   ;
+; y_up              ; 0     ; Signed Integer                   ;
+; y_down1           ; 150   ; Signed Integer                   ;
+; y_down2           ; 480   ; Signed Integer                   ;
+; x_line1           ; 51    ; Signed Integer                   ;
+; x_line2           ; 101   ; Signed Integer                   ;
+; x_line3           ; 151   ; Signed Integer                   ;
+; x_line4           ; 201   ; Signed Integer                   ;
+; x_line5           ; 251   ; Signed Integer                   ;
+; x_line6           ; 301   ; Signed Integer                   ;
+; x_line7           ; 351   ; Signed Integer                   ;
+; x_line8           ; 401   ; Signed Integer                   ;
+; x_line9           ; 451   ; Signed Integer                   ;
+; y_line1           ; 26    ; Signed Integer                   ;
+; y_line2           ; 51    ; Signed Integer                   ;
+; y_line3           ; 76    ; Signed Integer                   ;
+; y_line4           ; 101   ; Signed Integer                   ;
+; y_line5           ; 126   ; Signed Integer                   ;
+; ball_r            ; 10    ; Signed Integer                   ;
+; speed             ; 1     ; Signed Integer                   ;
+; flag_up           ; 0     ; Signed Integer                   ;
+; flag_down         ; 1     ; Signed Integer                   ;
+; flag_left         ; 0     ; Signed Integer                   ;
+; flag_right        ; 1     ; Signed Integer                   ;
+; board_centerx     ; 250   ; Signed Integer                   ;
+; half_board_width  ; 55    ; Signed Integer                   ;
+; board_width       ; 110   ; Signed Integer                   ;
+; board_centery     ; 470   ; Signed Integer                   ;
+; half_board_height ; 10    ; Signed Integer                   ;
+; board_height      ; 20    ; Signed Integer                   ;
+; board_speed       ; 1     ; Signed Integer                   ;
+; y_board1          ; 479   ; Signed Integer                   ;
+; y_board2          ; 459   ; Signed Integer                   ;
++-------------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult0    ;
++------------------------------------------------+-------------+---------------------+
+; Parameter Name                                 ; Value       ; Type                ;
++------------------------------------------------+-------------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON          ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF         ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON          ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF         ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 11          ; Untyped             ;
+; LPM_WIDTHB                                     ; 11          ; Untyped             ;
+; LPM_WIDTHP                                     ; 22          ; Untyped             ;
+; LPM_WIDTHR                                     ; 22          ; Untyped             ;
+; LPM_WIDTHS                                     ; 1           ; Untyped             ;
+; LPM_REPRESENTATION                             ; SIGNED      ; Untyped             ;
+; LPM_PIPELINE                                   ; 0           ; Untyped             ;
+; LATENCY                                        ; 0           ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; NO          ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; NO          ; Untyped             ;
+; USE_EAB                                        ; OFF         ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 6           ; Untyped             ;
+; DEVICE_FAMILY                                  ; Cyclone III ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL      ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT         ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO        ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0           ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0           ; Untyped             ;
+; CBXI_PARAMETER                                 ; mult_g4t    ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx          ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx          ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF         ; Untyped             ;
++------------------------------------------------+-------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult1    ;
++------------------------------------------------+-------------+---------------------+
+; Parameter Name                                 ; Value       ; Type                ;
++------------------------------------------------+-------------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON          ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF         ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON          ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF         ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 11          ; Untyped             ;
+; LPM_WIDTHB                                     ; 11          ; Untyped             ;
+; LPM_WIDTHP                                     ; 22          ; Untyped             ;
+; LPM_WIDTHR                                     ; 22          ; Untyped             ;
+; LPM_WIDTHS                                     ; 1           ; Untyped             ;
+; LPM_REPRESENTATION                             ; SIGNED      ; Untyped             ;
+; LPM_PIPELINE                                   ; 0           ; Untyped             ;
+; LATENCY                                        ; 0           ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; NO          ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; NO          ; Untyped             ;
+; USE_EAB                                        ; OFF         ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 6           ; Untyped             ;
+; DEVICE_FAMILY                                  ; Cyclone III ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL      ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT         ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO        ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0           ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0           ; Untyped             ;
+; CBXI_PARAMETER                                 ; mult_g4t    ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx          ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx          ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF         ; Untyped             ;
++------------------------------------------------+-------------+---------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -484,7 +611,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult0    ;
+; Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult4    ;
 +------------------------------------------------+-------------+---------------------+
 ; Parameter Name                                 ; Value       ; Type                ;
 +------------------------------------------------+-------------+---------------------+
@@ -519,7 +646,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult1    ;
+; Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult5    ;
 +------------------------------------------------+-------------+---------------------+
 ; Parameter Name                                 ; Value       ; Type                ;
 +------------------------------------------------+-------------+---------------------+
@@ -558,29 +685,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------+--------------------------------+
 ; Name                                  ; Value                          ;
 +---------------------------------------+--------------------------------+
-; Number of entity instances            ; 4                              ;
-; Entity Instance                       ; VGA_display:dis|lpm_mult:Mult2 ;
-;     -- LPM_WIDTHA                     ; 11                             ;
-;     -- LPM_WIDTHB                     ; 11                             ;
-;     -- LPM_WIDTHP                     ; 22                             ;
-;     -- LPM_REPRESENTATION             ; SIGNED                         ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                             ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                             ;
-;     -- USE_EAB                        ; OFF                            ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                           ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                             ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                             ;
-; Entity Instance                       ; VGA_display:dis|lpm_mult:Mult3 ;
-;     -- LPM_WIDTHA                     ; 11                             ;
-;     -- LPM_WIDTHB                     ; 11                             ;
-;     -- LPM_WIDTHP                     ; 22                             ;
-;     -- LPM_REPRESENTATION             ; SIGNED                         ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                             ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                             ;
-;     -- USE_EAB                        ; OFF                            ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                           ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                             ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                             ;
+; Number of entity instances            ; 6                              ;
 ; Entity Instance                       ; VGA_display:dis|lpm_mult:Mult0 ;
 ;     -- LPM_WIDTHA                     ; 11                             ;
 ;     -- LPM_WIDTHB                     ; 11                             ;
@@ -603,6 +708,50 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                           ;
 ;     -- INPUT_A_FIXED_VALUE            ; Bx                             ;
 ;     -- INPUT_B_FIXED_VALUE            ; Bx                             ;
+; Entity Instance                       ; VGA_display:dis|lpm_mult:Mult2 ;
+;     -- LPM_WIDTHA                     ; 11                             ;
+;     -- LPM_WIDTHB                     ; 11                             ;
+;     -- LPM_WIDTHP                     ; 22                             ;
+;     -- LPM_REPRESENTATION             ; SIGNED                         ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                             ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                             ;
+;     -- USE_EAB                        ; OFF                            ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                           ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                             ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                             ;
+; Entity Instance                       ; VGA_display:dis|lpm_mult:Mult3 ;
+;     -- LPM_WIDTHA                     ; 11                             ;
+;     -- LPM_WIDTHB                     ; 11                             ;
+;     -- LPM_WIDTHP                     ; 22                             ;
+;     -- LPM_REPRESENTATION             ; SIGNED                         ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                             ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                             ;
+;     -- USE_EAB                        ; OFF                            ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                           ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                             ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                             ;
+; Entity Instance                       ; VGA_display:dis|lpm_mult:Mult4 ;
+;     -- LPM_WIDTHA                     ; 11                             ;
+;     -- LPM_WIDTHB                     ; 11                             ;
+;     -- LPM_WIDTHP                     ; 22                             ;
+;     -- LPM_REPRESENTATION             ; SIGNED                         ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                             ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                             ;
+;     -- USE_EAB                        ; OFF                            ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                           ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                             ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                             ;
+; Entity Instance                       ; VGA_display:dis|lpm_mult:Mult5 ;
+;     -- LPM_WIDTHA                     ; 11                             ;
+;     -- LPM_WIDTHB                     ; 11                             ;
+;     -- LPM_WIDTHP                     ; 22                             ;
+;     -- LPM_REPRESENTATION             ; SIGNED                         ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                             ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                             ;
+;     -- USE_EAB                        ; OFF                            ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                           ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                             ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                             ;
 +---------------------------------------+--------------------------------+
 
 
@@ -612,52 +761,91 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Tue Mar 04 20:24:32 2014
+    Info: Processing started: Mon Mar 10 10:58:04 2014
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off vga_d -c vga_d
 Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info: Found 1 design units, including 1 entities, in source file ps2_top.v
+    Info: Found entity 1: ps2_top
 Info: Found 1 design units, including 1 entities, in source file vga_d.v
     Info: Found entity 1: vga_d
 Info: Found 1 design units, including 1 entities, in source file vga_display.v
     Info: Found entity 1: VGA_display
 Info: Found 1 design units, including 1 entities, in source file vga_sm.v
     Info: Found entity 1: VGA_sm
+Critical Warning (10846): Verilog HDL Instantiation warning at vga_d.v(41): instance has no name
 Info: Elaborating entity "vga_d" for the top level hierarchy
+Info: Elaborating entity "ps2_top" for hierarchy "ps2_top:comb_154"
+Warning (10036): Verilog HDL or VHDL warning at ps2_top.v(16): object "wei" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at ps2_top.v(17): object "seg" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at ps2_top.v(18): object "led" assigned a value but never read
+Warning (10762): Verilog HDL Case Statement warning at ps2_top.v(218): can't check case statement for completeness because the case expression has too many possible states
+Warning (10762): Verilog HDL Case Statement warning at ps2_top.v(242): can't check case statement for completeness because the case expression has too many possible states
 Info: Elaborating entity "VGA_sm" for hierarchy "VGA_sm:sm"
 Warning (10230): Verilog HDL assignment warning at VGA_sm.v(48): truncated value with size 32 to match size of target (10)
 Warning (10230): Verilog HDL assignment warning at VGA_sm.v(49): truncated value with size 32 to match size of target (10)
 Info: Elaborating entity "VGA_display" for hierarchy "VGA_display:dis"
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(34): truncated value with size 32 to match size of target (3)
-Warning (10270): Verilog HDL Case Statement warning at VGA_display.v(42): incomplete case statement has no default case item
-Warning (10240): Verilog HDL Always Construct warning at VGA_display.v(38): inferring latch(es) for variable "RGB", which holds its previous value in one or more paths through the always construct
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(142): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(144): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(152): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(154): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(195): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(197): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(203): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(205): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(228): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(236): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(465): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(467): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(475): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(477): truncated value with size 32 to match size of target (10)
-Info (10041): Inferred latch for "RGB[0]" at VGA_display.v(42)
-Info (10041): Inferred latch for "RGB[1]" at VGA_display.v(42)
-Info (10041): Inferred latch for "RGB[2]" at VGA_display.v(42)
-Info (10041): Inferred latch for "RGB[3]" at VGA_display.v(42)
-Info (10041): Inferred latch for "RGB[4]" at VGA_display.v(42)
-Info (10041): Inferred latch for "RGB[5]" at VGA_display.v(42)
-Info (10041): Inferred latch for "RGB[6]" at VGA_display.v(42)
-Info (10041): Inferred latch for "RGB[7]" at VGA_display.v(42)
-Info: Inferred 4 megafunctions from design logic
-    Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "VGA_display:dis|Mult2"
-    Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "VGA_display:dis|Mult3"
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(41): truncated value with size 32 to match size of target (3)
+Warning (10235): Verilog HDL Always Construct warning at VGA_display.v(57): variable "RGB5" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10270): Verilog HDL Case Statement warning at VGA_display.v(50): incomplete case statement has no default case item
+Warning (10240): Verilog HDL Always Construct warning at VGA_display.v(45): inferring latch(es) for variable "RGB", which holds its previous value in one or more paths through the always construct
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(151): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(153): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(161): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(163): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(204): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(206): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(213): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(215): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(250): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(252): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(254): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(262): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(264): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(266): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(275): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(277): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(279): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(285): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(287): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(289): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(302): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(303): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(316): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(323): truncated value with size 32 to match size of target (10)
+Warning (10240): Verilog HDL Always Construct warning at VGA_display.v(298): inferring latch(es) for variable "board_cy", which holds its previous value in one or more paths through the always construct
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(383): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(391): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(633): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(635): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(643): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(645): truncated value with size 32 to match size of target (10)
+Info (10041): Inferred latch for "board_cy[0]" at VGA_display.v(298)
+Info (10041): Inferred latch for "board_cy[1]" at VGA_display.v(298)
+Info (10041): Inferred latch for "board_cy[2]" at VGA_display.v(298)
+Info (10041): Inferred latch for "board_cy[3]" at VGA_display.v(298)
+Info (10041): Inferred latch for "board_cy[4]" at VGA_display.v(298)
+Info (10041): Inferred latch for "board_cy[5]" at VGA_display.v(298)
+Info (10041): Inferred latch for "board_cy[6]" at VGA_display.v(298)
+Info (10041): Inferred latch for "board_cy[7]" at VGA_display.v(298)
+Info (10041): Inferred latch for "board_cy[8]" at VGA_display.v(298)
+Info (10041): Inferred latch for "board_cy[9]" at VGA_display.v(298)
+Info (10041): Inferred latch for "RGB[0]" at VGA_display.v(50)
+Info (10041): Inferred latch for "RGB[1]" at VGA_display.v(50)
+Info (10041): Inferred latch for "RGB[2]" at VGA_display.v(50)
+Info (10041): Inferred latch for "RGB[3]" at VGA_display.v(50)
+Info (10041): Inferred latch for "RGB[4]" at VGA_display.v(50)
+Info (10041): Inferred latch for "RGB[5]" at VGA_display.v(50)
+Info (10041): Inferred latch for "RGB[6]" at VGA_display.v(50)
+Info (10041): Inferred latch for "RGB[7]" at VGA_display.v(50)
+Info: Inferred 6 megafunctions from design logic
     Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "VGA_display:dis|Mult0"
     Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "VGA_display:dis|Mult1"
-Info: Elaborated megafunction instantiation "VGA_display:dis|lpm_mult:Mult2"
-Info: Instantiated megafunction "VGA_display:dis|lpm_mult:Mult2" with the following parameter:
+    Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "VGA_display:dis|Mult2"
+    Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "VGA_display:dis|Mult3"
+    Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "VGA_display:dis|Mult4"
+    Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "VGA_display:dis|Mult5"
+Info: Elaborated megafunction instantiation "VGA_display:dis|lpm_mult:Mult0"
+Info: Instantiated megafunction "VGA_display:dis|lpm_mult:Mult0" with the following parameter:
     Info: Parameter "LPM_WIDTHA" = "11"
     Info: Parameter "LPM_WIDTHB" = "11"
     Info: Parameter "LPM_WIDTHP" = "22"
@@ -674,31 +862,33 @@ Warning: Latch VGA_display:dis|RGB[5] has unsafe behavior
 Warning: Latch VGA_display:dis|RGB[6] has unsafe behavior
     Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|n[1]
 Warning: Latch VGA_display:dis|RGB[7] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|n[1]
-Warning: Latch VGA_display:dis|RGB[0] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|n[1]
-Warning: Latch VGA_display:dis|RGB[1] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|n[1]
-Warning: Latch VGA_display:dis|RGB[2] has unsafe behavior
     Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|n[2]
+Warning: Latch VGA_display:dis|RGB[0] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|n[0]
+Warning: Latch VGA_display:dis|RGB[1] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|n[2]
+Warning: Latch VGA_display:dis|RGB[2] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|n[0]
 Warning: Latch VGA_display:dis|RGB[3] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|n[1]
+    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|n[0]
 Warning: Latch VGA_display:dis|RGB[4] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|n[1]
+    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|n[0]
 Info: Registers with preset signals will power-up high
 Info: DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "ps2_byte[7]" is stuck at GND
 Info: Timing-Driven Synthesis is running
 Info: Generated suppressed messages file D:/zhuangqiu/vga_d.map.smsg
-Info: Implemented 891 device resources after synthesis - the final resource count might be different
+Info: Implemented 1185 device resources after synthesis - the final resource count might be different
     Info: Implemented 5 input pins
-    Info: Implemented 10 output pins
-    Info: Implemented 868 logic cells
-    Info: Implemented 8 DSP elements
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 35 warnings
-    Info: Peak virtual memory: 243 megabytes
-    Info: Processing ended: Tue Mar 04 20:24:38 2014
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Implemented 18 output pins
+    Info: Implemented 1150 logic cells
+    Info: Implemented 12 DSP elements
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 61 warnings
+    Info: Peak virtual memory: 268 megabytes
+    Info: Processing ended: Mon Mar 10 10:58:14 2014
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:10
 
 
 +------------------------------------------+

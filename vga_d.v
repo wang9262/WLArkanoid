@@ -1,8 +1,11 @@
-module vga_d(clk_in,reset,mode,game_button_l,game_button_r,red,grn,blu,hs,vs);
-    input clk_in,reset,mode,game_button_l,game_button_r;
+module vga_d(clk_in,reset,mode,ps2k_clk,ps2k_data,red,grn,blu,hs,vs,ps2_byte);
+    input clk_in,reset,mode,ps2k_clk,ps2k_data;
     output [2:0]red,grn;
     output [1:0]blu;
     output hs,vs;
+    output [7:0]ps2_byte;
+    wire [7:0]ps2_byte;
+    wire ps2_state; 
     
     wire hs1,vs1;
     assign hs=hs1,vs=vs1;
@@ -35,26 +38,27 @@ always @(posedge clk_in or posedge reset)
    else clk_25M<=~clk_25M;
     end
 /////////////////////////////////////
+	ps2_top(clk_in,~reset,ps2k_clk,ps2k_data,ps2_byte,ps2_state);
     VGA_sm sm(
-          .clk_25M(clk_25M),
-          .reset(reset),
-          .Hs(hs1),
-          .Vs(vs1),
-    .hortional_counter(hortional_counter),
-    .vertiacl_counter(vertiacl_counter)
+			.clk_25M(clk_25M),
+			.reset(reset),
+			.Hs(hs1),
+			.Vs(vs1),
+			.hortional_counter(hortional_counter),
+			.vertiacl_counter(vertiacl_counter)
           );
     
     VGA_display dis(
-		.clk(CLK),
-          .reset(reset),
-    .mode(mode),
-    .game_button_l(game_button_l),
-    .game_button_r(game_button_r),
-          .RED(red),
-          .GRN(grn),
-          .BLU(blu),
-    .hortional_counter(hortional_counter),
-    .vertiacl_counter(vertiacl_counter)
+			.clk(CLK),
+			.reset(reset),
+			.mode(mode),
+			.ps2_byte(ps2_byte),
+			.ps2_state(ps2_state),
+			.RED(red),
+			.GRN(grn),
+			.BLU(blu),
+			.hortional_counter(hortional_counter),
+			.vertiacl_counter(vertiacl_counter)
           );
     
 endmodule
