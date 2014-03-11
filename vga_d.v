@@ -1,5 +1,5 @@
-module vga_d(clk_in,reset,mode,level,ps2k_clk,ps2k_data,red,grn,blu,hs,vs,ps2_byte);
-    input clk_in,reset,mode,ps2k_clk,ps2k_data,level;
+module vga_d(clk_in,reset,level,ps2k_clk,ps2k_data,red,grn,blu,hs,vs,ps2_byte);
+    input clk_in,reset,ps2k_clk,ps2k_data,level;
     output red,grn;
     output blu;
     output hs,vs;
@@ -52,7 +52,6 @@ always @(posedge clk_in or posedge reset)
             .clk1(clk_in),
 			.clk(CLK),
 			.reset(reset),
-			.mode(mode),
 			.level(level),
 			.ps2_byte(ps2_byte),
 			.ps2_state(ps2_state),
