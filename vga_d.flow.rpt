@@ -1,5 +1,5 @@
 Flow report for vga_d
-Mon Mar 10 10:58:29 2014
+Tue Mar 11 11:55:05 2014
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +------------------------------------+------------------------------------------+
-; Flow Status                        ; Successful - Mon Mar 10 10:58:26 2014    ;
+; Flow Status                        ; Successful - Tue Mar 11 11:54:57 2014    ;
 ; Quartus II Version                 ; 9.1 Build 222 10/21/2009 SJ Full Version ;
 ; Revision Name                      ; vga_d                                    ;
 ; Top-level Entity Name              ; vga_d                                    ;
@@ -46,13 +46,13 @@ applicable agreement for further details.
 ; Device                             ; EP3C16F484C6                             ;
 ; Timing Models                      ; Final                                    ;
 ; Met timing requirements            ; N/A                                      ;
-; Total logic elements               ; 1,142 / 15,408 ( 7 % )                   ;
-;     Total combinational functions  ; 1,138 / 15,408 ( 7 % )                   ;
-;     Dedicated logic registers      ; 237 / 15,408 ( 2 % )                     ;
-; Total registers                    ; 237                                      ;
-; Total pins                         ; 23 / 347 ( 7 % )                         ;
+; Total logic elements               ; 2,620 / 15,408 ( 17 % )                  ;
+;     Total combinational functions  ; 2,612 / 15,408 ( 17 % )                  ;
+;     Dedicated logic registers      ; 316 / 15,408 ( 2 % )                     ;
+; Total registers                    ; 316                                      ;
+; Total pins                         ; 19 / 347 ( 5 % )                         ;
 ; Total virtual pins                 ; 0                                        ;
-; Total memory bits                  ; 0 / 516,096 ( 0 % )                      ;
+; Total memory bits                  ; 196,608 / 516,096 ( 38 % )               ;
 ; Embedded Multiplier 9-bit elements ; 12 / 112 ( 11 % )                        ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                            ;
 +------------------------------------+------------------------------------------+
@@ -63,27 +63,29 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/10/2014 10:58:04 ;
+; Start date & time ; 03/11/2014 11:54:05 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; vga_d               ;
 +-------------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                       ;
-+------------------------------------+--------------------------------------------------------------------+---------------+-------------+----------------+
-; Assignment Name                    ; Value                                                              ; Default Value ; Entity Name ; Section Id     ;
-+------------------------------------+--------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 42251058922150.139442028407388                                     ; --            ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP             ; 85                                                                 ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP             ; 0                                                                  ; --            ; --          ; --             ;
-; MISC_FILE                          ; C:/Users/¶Å¶Å/Desktop/Electronic_Course_Design/zhuangqiu/vga_d.dpf ; --            ; --          ; --             ;
-; MISC_FILE                          ; D:/zhuangqiu/vga_d.dpf                                             ; --            ; --          ; --             ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE        ; 1.2V                                                               ; --            ; --          ; --             ;
-; PARTITION_COLOR                    ; 16764057                                                           ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                                                             ; --            ; --          ; Top            ;
-; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                                                                ; --            ; --          ; eda_blast_fpga ;
-+------------------------------------+--------------------------------------------------------------------+---------------+-------------+----------------+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                   ;
++------------------------------------+------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                    ; Value                                          ; Default Value ; Entity Name ; Section Id     ;
++------------------------------------+------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID              ; 46580546471414.139451004508224                 ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; ROM: 1-PORT                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                                            ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP             ; 85                                             ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP             ; 0                                              ; --            ; --          ; --             ;
+; MISC_FILE                          ; C:/Users/Chen yue/Desktop/zhuangqiu2/vga_d.dpf ; --            ; --          ; --             ;
+; MISC_FILE                          ; rom1_bb.v                                      ; --            ; --          ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE        ; 1.2V                                           ; --            ; --          ; --             ;
+; PARTITION_COLOR                    ; 16764057                                       ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                                         ; --            ; --          ; Top            ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                                            ; --            ; --          ; eda_blast_fpga ;
++------------------------------------+------------------------------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -91,11 +93,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 268 MB              ; 00:00:10                           ;
-; Fitter                    ; 00:00:09     ; 1.5                     ; 333 MB              ; 00:00:10                           ;
-; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 274 MB              ; 00:00:05                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 242 MB              ; 00:00:02                           ;
-; Total                     ; 00:00:23     ; --                      ; --                  ; 00:00:25                           ;
+; Analysis & Synthesis      ; 00:00:21     ; 1.0                     ; 260 MB              ; 00:00:22                           ;
+; Fitter                    ; 00:00:21     ; 1.4                     ; 324 MB              ; 00:00:20                           ;
+; TimeQuest Timing Analyzer ; 00:00:12     ; 1.2                     ; 265 MB              ; 00:00:11                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 240 MB              ; 00:00:03                           ;
+; Total                     ; 00:00:54     ; --                      ; --                  ; 00:00:53                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -104,10 +106,10 @@ applicable agreement for further details.
 +---------------------------+------------------+---------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
 +---------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis      ; acer-PC          ; Windows Vista ; 6.0        ; x86_64         ;
-; Fitter                    ; acer-PC          ; Windows Vista ; 6.0        ; x86_64         ;
-; Assembler                 ; acer-PC          ; Windows Vista ; 6.0        ; x86_64         ;
-; TimeQuest Timing Analyzer ; acer-PC          ; Windows Vista ; 6.0        ; x86_64         ;
+; Analysis & Synthesis      ; CHENYUE          ; Windows Vista ; 6.0        ; i686           ;
+; Fitter                    ; CHENYUE          ; Windows Vista ; 6.0        ; i686           ;
+; Assembler                 ; CHENYUE          ; Windows Vista ; 6.0        ; i686           ;
+; TimeQuest Timing Analyzer ; CHENYUE          ; Windows Vista ; 6.0        ; i686           ;
 +---------------------------+------------------+---------------+------------+----------------+
 
 

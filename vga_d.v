@@ -1,16 +1,16 @@
-module vga_d(clk_in,reset,mode,ps2k_clk,ps2k_data,red,grn,blu,hs,vs,ps2_byte);
-    input clk_in,reset,mode,ps2k_clk,ps2k_data;
-    output [2:0]red,grn;
-    output [1:0]blu;
+module vga_d(clk_in,reset,mode,level,ps2k_clk,ps2k_data,red,grn,blu,hs,vs,ps2_byte);
+    input clk_in,reset,mode,ps2k_clk,ps2k_data,level;
+    output red,grn;
+    output blu;
     output hs,vs;
     output [7:0]ps2_byte;
     wire [7:0]ps2_byte;
     wire ps2_state; 
-    
     wire hs1,vs1;
     assign hs=hs1,vs=vs1;
     wire [9:0]hortional_counter;
-wire [9:0] vertiacl_counter;
+	wire [9:0] vertiacl_counter;
+	wire score; 
 ///////////////////////////////// 
 reg CLK;
 integer i;
@@ -47,18 +47,21 @@ always @(posedge clk_in or posedge reset)
 			.hortional_counter(hortional_counter),
 			.vertiacl_counter(vertiacl_counter)
           );
-    
+   
     VGA_display dis(
+            .clk1(clk_in),
 			.clk(CLK),
 			.reset(reset),
 			.mode(mode),
+			.level(level),
 			.ps2_byte(ps2_byte),
 			.ps2_state(ps2_state),
 			.RED(red),
 			.GRN(grn),
 			.BLU(blu),
 			.hortional_counter(hortional_counter),
-			.vertiacl_counter(vertiacl_counter)
+			.vertiacl_counter(vertiacl_counter),
+			.score(score)
           );
     
 endmodule

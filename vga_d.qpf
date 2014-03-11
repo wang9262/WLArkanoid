@@ -17,13 +17,13 @@
 # -------------------------------------------------------------------------- #
 #
 # Quartus II
-# Version 9.1 Build 222 10/21/2009 Service Pack 0.08 SJ Full Version
-# Date created = 18:23:09  March 01, 2014
+# Version 9.1 Build 222 10/21/2009 SJ Full Version
+# Date created = 09:10:01  March 11, 2014
 #
 # -------------------------------------------------------------------------- #
 
 QUARTUS_VERSION = "9.1"
-DATE = "18:23:09  March 01, 2014"
+DATE = "09:10:01  March 11, 2014"
 
 # Revisions
 
