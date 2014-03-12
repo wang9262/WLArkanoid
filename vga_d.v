@@ -9,8 +9,7 @@ module vga_d(clk_in,reset,level,ps2k_clk,ps2k_data,red,grn,blu,hs,vs,ps2_byte);
     wire hs1,vs1;
     assign hs=hs1,vs=vs1;
     wire [9:0]hortional_counter;
-	wire [9:0] vertiacl_counter;
-	wire score; 
+	wire [9:0] vertiacl_counter; 
 ///////////////////////////////// 
 reg CLK;
 integer i;
@@ -60,7 +59,6 @@ always @(posedge clk_in or posedge reset)
 			.BLU(blu),
 			.hortional_counter(hortional_counter),
 			.vertiacl_counter(vertiacl_counter),
-			.score(score)
           );
     
 endmodule

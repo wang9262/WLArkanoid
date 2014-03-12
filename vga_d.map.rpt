@@ -1,5 +1,5 @@
 Analysis & Synthesis report for vga_d
-Wed Mar 12 00:30:45 2014
+Wed Mar 12 22:41:37 2014
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -17,30 +17,31 @@ Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
   9. Analysis & Synthesis DSP Block Usage Summary
  10. User-Specified and Inferred Latches
  11. Registers Removed During Synthesis
- 12. Removed Registers Triggering Further Register Optimizations
- 13. General Register Statistics
- 14. Inverted Register Statistics
- 15. Multiplexer Restructuring Statistics (Restructuring Performed)
- 16. Source assignments for VGA_display:dis|rom1:comb_30121|altsyncram:altsyncram_component|altsyncram_ub91:auto_generated
- 17. Parameter Settings for User Entity Instance: VGA_display:dis
- 18. Parameter Settings for User Entity Instance: VGA_display:dis|rom1:comb_30121|altsyncram:altsyncram_component
- 19. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult0
- 20. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult1
- 21. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_divide:Mod0
- 22. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult12
+ 12. General Register Statistics
+ 13. Inverted Register Statistics
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Source assignments for VGA_display:dis|rom1:comb_31101|altsyncram:altsyncram_component|altsyncram_ub91:auto_generated
+ 16. Parameter Settings for User Entity Instance: VGA_display:dis
+ 17. Parameter Settings for User Entity Instance: VGA_display:dis|rom1:comb_31101|altsyncram:altsyncram_component
+ 18. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult0
+ 19. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult1
+ 20. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_divide:Mod0
+ 21. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult12
+ 22. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_divide:Div1
  23. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult32
  24. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_divide:Div0
- 25. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult43
- 26. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult44
- 27. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult45
- 28. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult47
- 29. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult49
- 30. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult42
- 31. altsyncram Parameter Settings by Entity Instance
- 32. lpm_mult Parameter Settings by Entity Instance
- 33. Port Connectivity Checks: "VGA_display:dis|VGA_sm:u1"
- 34. Analysis & Synthesis Messages
- 35. Analysis & Synthesis Suppressed Messages
+ 25. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_divide:Mod1
+ 26. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult43
+ 27. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult44
+ 28. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult45
+ 29. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult47
+ 30. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult49
+ 31. Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult42
+ 32. altsyncram Parameter Settings by Entity Instance
+ 33. lpm_mult Parameter Settings by Entity Instance
+ 34. Port Connectivity Checks: "VGA_display:dis|VGA_sm:u1"
+ 35. Analysis & Synthesis Messages
+ 36. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -66,15 +67,15 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Mar 12 00:30:44 2014    ;
+; Analysis & Synthesis Status        ; Successful - Wed Mar 12 22:41:37 2014    ;
 ; Quartus II Version                 ; 9.1 Build 222 10/21/2009 SJ Full Version ;
 ; Revision Name                      ; vga_d                                    ;
 ; Top-level Entity Name              ; vga_d                                    ;
 ; Family                             ; Cyclone III                              ;
-; Total logic elements               ; 2,682                                    ;
-;     Total combinational functions  ; 2,667                                    ;
-;     Dedicated logic registers      ; 259                                      ;
-; Total registers                    ; 259                                      ;
+; Total logic elements               ; 3,244                                    ;
+;     Total combinational functions  ; 3,229                                    ;
+;     Dedicated logic registers      ; 266                                      ;
+; Total registers                    ; 266                                      ;
 ; Total pins                         ; 18                                       ;
 ; Total virtual pins                 ; 0                                        ;
 ; Total memory bits                  ; 196,608                                  ;
@@ -219,29 +220,29 @@ applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 2,682       ;
+; Estimated Total logic elements              ; 3,244       ;
 ;                                             ;             ;
-; Total combinational functions               ; 2667        ;
+; Total combinational functions               ; 3229        ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 1133        ;
-;     -- 3 input functions                    ; 612         ;
-;     -- <=2 input functions                  ; 922         ;
+;     -- 4 input functions                    ; 1376        ;
+;     -- 3 input functions                    ; 639         ;
+;     -- <=2 input functions                  ; 1214        ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 1612        ;
-;     -- arithmetic mode                      ; 1055        ;
+;     -- normal mode                          ; 1945        ;
+;     -- arithmetic mode                      ; 1284        ;
 ;                                             ;             ;
-; Total registers                             ; 259         ;
-;     -- Dedicated logic registers            ; 259         ;
+; Total registers                             ; 266         ;
+;     -- Dedicated logic registers            ; 266         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
 ; I/O pins                                    ; 18          ;
 ; Total memory bits                           ; 196608      ;
 ; Embedded Multiplier 9-bit elements          ; 4           ;
 ; Maximum fan-out node                        ; reset~input ;
-; Maximum fan-out                             ; 213         ;
-; Total fan-out                               ; 9370        ;
-; Average fan-out                             ; 3.13        ;
+; Maximum fan-out                             ; 220         ;
+; Total fan-out                               ; 11008       ;
+; Average fan-out                             ; 3.09        ;
 +---------------------------------------------+-------------+
 
 
@@ -250,17 +251,25 @@ applicable agreement for further details.
 +---------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                        ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                            ; Library Name ;
 +---------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |vga_d                                            ; 2667 (46)         ; 259 (34)     ; 196608      ; 4            ; 0       ; 2         ; 18   ; 0            ; |vga_d                                                                                                                                         ; work         ;
-;    |VGA_display:dis|                              ; 2429 (1942)       ; 134 (64)     ; 196608      ; 4            ; 0       ; 2         ; 0    ; 0            ; |vga_d|VGA_display:dis                                                                                                                         ;              ;
+; |vga_d                                            ; 3229 (46)         ; 266 (34)     ; 196608      ; 4            ; 0       ; 2         ; 18   ; 0            ; |vga_d                                                                                                                                         ; work         ;
+;    |VGA_display:dis|                              ; 2991 (2415)       ; 141 (71)     ; 196608      ; 4            ; 0       ; 2         ; 0    ; 0            ; |vga_d|VGA_display:dis                                                                                                                         ;              ;
 ;       |VGA_sm:u1|                                 ; 92 (92)           ; 64 (64)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|VGA_sm:u1                                                                                                               ;              ;
 ;       |lpm_divide:Div0|                           ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_divide:Div0                                                                                                         ;              ;
 ;          |lpm_divide_9gm:auto_generated|          ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_divide:Div0|lpm_divide_9gm:auto_generated                                                                           ;              ;
 ;             |sign_div_unsign_akh:divider|         ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_divide:Div0|lpm_divide_9gm:auto_generated|sign_div_unsign_akh:divider                                               ;              ;
 ;                |alt_u_div_v2f:divider|            ; 43 (43)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_divide:Div0|lpm_divide_9gm:auto_generated|sign_div_unsign_akh:divider|alt_u_div_v2f:divider                         ;              ;
+;       |lpm_divide:Div1|                           ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_divide:Div1                                                                                                         ;              ;
+;          |lpm_divide_9gm:auto_generated|          ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_divide:Div1|lpm_divide_9gm:auto_generated                                                                           ;              ;
+;             |sign_div_unsign_akh:divider|         ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_divide:Div1|lpm_divide_9gm:auto_generated|sign_div_unsign_akh:divider                                               ;              ;
+;                |alt_u_div_v2f:divider|            ; 43 (43)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_divide:Div1|lpm_divide_9gm:auto_generated|sign_div_unsign_akh:divider|alt_u_div_v2f:divider                         ;              ;
 ;       |lpm_divide:Mod0|                           ; 46 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_divide:Mod0                                                                                                         ;              ;
 ;          |lpm_divide_c8m:auto_generated|          ; 46 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_divide:Mod0|lpm_divide_c8m:auto_generated                                                                           ;              ;
 ;             |sign_div_unsign_akh:divider|         ; 46 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_divide:Mod0|lpm_divide_c8m:auto_generated|sign_div_unsign_akh:divider                                               ;              ;
 ;                |alt_u_div_v2f:divider|            ; 46 (46)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_divide:Mod0|lpm_divide_c8m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_v2f:divider                         ;              ;
+;       |lpm_divide:Mod1|                           ; 46 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_divide:Mod1                                                                                                         ;              ;
+;          |lpm_divide_c8m:auto_generated|          ; 46 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_divide:Mod1|lpm_divide_c8m:auto_generated                                                                           ;              ;
+;             |sign_div_unsign_akh:divider|         ; 46 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_divide:Mod1|lpm_divide_c8m:auto_generated|sign_div_unsign_akh:divider                                               ;              ;
+;                |alt_u_div_v2f:divider|            ; 46 (46)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_divide:Mod1|lpm_divide_c8m:auto_generated|sign_div_unsign_akh:divider|alt_u_div_v2f:divider                         ;              ;
 ;       |lpm_mult:Mult0|                            ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_mult:Mult0                                                                                                          ;              ;
 ;          |mult_g4t:auto_generated|                ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_mult:Mult0|mult_g4t:auto_generated                                                                                  ;              ;
 ;       |lpm_mult:Mult12|                           ; 39 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_mult:Mult12                                                                                                         ;              ;
@@ -343,13 +352,13 @@ applicable agreement for further details.
 ;                |mpar_add:sub_par_add|             ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_mult:Mult49|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add                                                 ;              ;
 ;                   |lpm_add_sub:adder[0]|          ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_mult:Mult49|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                            ;              ;
 ;                      |add_sub_gfh:auto_generated| ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|lpm_mult:Mult49|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_gfh:auto_generated ;              ;
-;       |rom1:comb_30121|                           ; 20 (0)            ; 6 (0)        ; 196608      ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|rom1:comb_30121                                                                                                         ;              ;
-;          |altsyncram:altsyncram_component|        ; 20 (0)            ; 6 (0)        ; 196608      ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|rom1:comb_30121|altsyncram:altsyncram_component                                                                         ;              ;
-;             |altsyncram_ub91:auto_generated|      ; 20 (0)            ; 6 (6)        ; 196608      ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|rom1:comb_30121|altsyncram:altsyncram_component|altsyncram_ub91:auto_generated                                          ;              ;
-;                |decode_b7a:rden_decode|           ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|rom1:comb_30121|altsyncram:altsyncram_component|altsyncram_ub91:auto_generated|decode_b7a:rden_decode                   ;              ;
-;                |mux_tlb:mux2|                     ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|rom1:comb_30121|altsyncram:altsyncram_component|altsyncram_ub91:auto_generated|mux_tlb:mux2                             ;              ;
-;    |VGA_sm:sm|                                    ; 97 (97)           ; 66 (66)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_sm:sm                                                                                                                               ;              ;
-;    |ps2_top:comb_154|                             ; 95 (95)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|ps2_top:comb_154                                                                                                                        ;              ;
+;       |rom1:comb_31101|                           ; 20 (0)            ; 6 (0)        ; 196608      ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|rom1:comb_31101                                                                                                         ;              ;
+;          |altsyncram:altsyncram_component|        ; 20 (0)            ; 6 (0)        ; 196608      ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|rom1:comb_31101|altsyncram:altsyncram_component                                                                         ;              ;
+;             |altsyncram_ub91:auto_generated|      ; 20 (0)            ; 6 (6)        ; 196608      ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|rom1:comb_31101|altsyncram:altsyncram_component|altsyncram_ub91:auto_generated                                          ;              ;
+;                |decode_b7a:rden_decode|           ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|rom1:comb_31101|altsyncram:altsyncram_component|altsyncram_ub91:auto_generated|decode_b7a:rden_decode                   ;              ;
+;                |mux_tlb:mux2|                     ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_display:dis|rom1:comb_31101|altsyncram:altsyncram_component|altsyncram_ub91:auto_generated|mux_tlb:mux2                             ;              ;
+;    |VGA_sm:sm|                                    ; 96 (96)           ; 66 (66)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|VGA_sm:sm                                                                                                                               ;              ;
+;    |ps2_top:comb_154|                             ; 96 (96)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_d|ps2_top:comb_154                                                                                                                        ;              ;
 +---------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -359,7 +368,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------+------------+
 ; Name                                                                                                      ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF        ;
 +-----------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------+------------+
-; VGA_display:dis|rom1:comb_30121|altsyncram:altsyncram_component|altsyncram_ub91:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 65536        ; 3            ; --           ; --           ; 196608 ; tupian.mif ;
+; VGA_display:dis|rom1:comb_31101|altsyncram:altsyncram_component|altsyncram_ub91:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 65536        ; 3            ; --           ; --           ; 196608 ; tupian.mif ;
 +-----------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------+------------+
 
 
@@ -386,31 +395,39 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +-----------------------------------------------------+------------------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal          ; Free of Timing Hazards ;
 +-----------------------------------------------------+------------------------------+------------------------+
-; VGA_display:dis|addr_res[15]                        ; VGA_display:dis|addr_res[13] ; yes                    ;
-; VGA_display:dis|addr_res[13]                        ; VGA_display:dis|addr_res[13] ; yes                    ;
-; VGA_display:dis|addr_res[14]                        ; VGA_display:dis|addr_res[13] ; yes                    ;
-; VGA_display:dis|addr_res[0]                         ; VGA_display:dis|addr_res[13] ; yes                    ;
-; VGA_display:dis|addr_res[1]                         ; VGA_display:dis|addr_res[13] ; yes                    ;
-; VGA_display:dis|addr_res[2]                         ; VGA_display:dis|addr_res[13] ; yes                    ;
-; VGA_display:dis|addr_res[3]                         ; VGA_display:dis|addr_res[13] ; yes                    ;
-; VGA_display:dis|addr_res[4]                         ; VGA_display:dis|addr_res[13] ; yes                    ;
-; VGA_display:dis|addr_res[5]                         ; VGA_display:dis|addr_res[13] ; yes                    ;
-; VGA_display:dis|addr_res[6]                         ; VGA_display:dis|addr_res[13] ; yes                    ;
-; VGA_display:dis|addr_res[7]                         ; VGA_display:dis|addr_res[13] ; yes                    ;
-; VGA_display:dis|addr_res[8]                         ; VGA_display:dis|addr_res[13] ; yes                    ;
-; VGA_display:dis|addr_res[9]                         ; VGA_display:dis|addr_res[13] ; yes                    ;
-; VGA_display:dis|addr_res[10]                        ; VGA_display:dis|addr_res[13] ; yes                    ;
-; VGA_display:dis|addr_res[11]                        ; VGA_display:dis|addr_res[13] ; yes                    ;
-; VGA_display:dis|addr_res[12]                        ; VGA_display:dis|addr_res[13] ; yes                    ;
-; VGA_display:dis|level_b[1]                          ; VGA_display:dis|LessThan104  ; yes                    ;
-; VGA_display:dis|level_b[2]                          ; VGA_display:dis|LessThan104  ; yes                    ;
-; VGA_display:dis|level_b[3]                          ; VGA_display:dis|LessThan104  ; yes                    ;
-; VGA_display:dis|level_b[0]                          ; VGA_display:dis|LessThan104  ; yes                    ;
-; VGA_display:dis|level_a[1]                          ; VGA_display:dis|LessThan104  ; yes                    ;
-; VGA_display:dis|level_a[2]                          ; VGA_display:dis|LessThan104  ; yes                    ;
-; VGA_display:dis|level_a[3]                          ; VGA_display:dis|LessThan104  ; yes                    ;
-; VGA_display:dis|level_a[0]                          ; VGA_display:dis|LessThan104  ; yes                    ;
-; Number of user-specified and inferred latches = 24  ;                              ;                        ;
+; VGA_display:dis|addr_res[15]                        ; VGA_display:dis|addr_res[15] ; yes                    ;
+; VGA_display:dis|addr_res[14]                        ; VGA_display:dis|addr_res[15] ; yes                    ;
+; VGA_display:dis|addr_res[13]                        ; VGA_display:dis|addr_res[15] ; yes                    ;
+; VGA_display:dis|addr_res[0]                         ; VGA_display:dis|addr_res[15] ; yes                    ;
+; VGA_display:dis|addr_res[1]                         ; VGA_display:dis|addr_res[15] ; yes                    ;
+; VGA_display:dis|addr_res[2]                         ; VGA_display:dis|addr_res[15] ; yes                    ;
+; VGA_display:dis|addr_res[3]                         ; VGA_display:dis|addr_res[15] ; yes                    ;
+; VGA_display:dis|addr_res[4]                         ; VGA_display:dis|addr_res[15] ; yes                    ;
+; VGA_display:dis|addr_res[5]                         ; VGA_display:dis|addr_res[15] ; yes                    ;
+; VGA_display:dis|addr_res[6]                         ; VGA_display:dis|addr_res[15] ; yes                    ;
+; VGA_display:dis|addr_res[7]                         ; VGA_display:dis|addr_res[15] ; yes                    ;
+; VGA_display:dis|addr_res[8]                         ; VGA_display:dis|addr_res[15] ; yes                    ;
+; VGA_display:dis|addr_res[9]                         ; VGA_display:dis|addr_res[15] ; yes                    ;
+; VGA_display:dis|addr_res[10]                        ; VGA_display:dis|addr_res[15] ; yes                    ;
+; VGA_display:dis|addr_res[11]                        ; VGA_display:dis|addr_res[15] ; yes                    ;
+; VGA_display:dis|addr_res[12]                        ; VGA_display:dis|addr_res[15] ; yes                    ;
+; VGA_display:dis|level_b[2]                          ; VGA_display:dis|LessThan110  ; yes                    ;
+; VGA_display:dis|level_b[1]                          ; VGA_display:dis|LessThan110  ; yes                    ;
+; VGA_display:dis|level_b[3]                          ; VGA_display:dis|LessThan110  ; yes                    ;
+; VGA_display:dis|level_b[0]                          ; VGA_display:dis|LessThan110  ; yes                    ;
+; VGA_display:dis|score_a[2]                          ; VGA_display:dis|LessThan112  ; yes                    ;
+; VGA_display:dis|score_a[1]                          ; VGA_display:dis|LessThan112  ; yes                    ;
+; VGA_display:dis|score_a[3]                          ; VGA_display:dis|LessThan112  ; yes                    ;
+; VGA_display:dis|score_a[0]                          ; VGA_display:dis|LessThan112  ; yes                    ;
+; VGA_display:dis|level_a[1]                          ; VGA_display:dis|LessThan110  ; yes                    ;
+; VGA_display:dis|level_a[2]                          ; VGA_display:dis|LessThan110  ; yes                    ;
+; VGA_display:dis|level_a[3]                          ; VGA_display:dis|LessThan110  ; yes                    ;
+; VGA_display:dis|level_a[0]                          ; VGA_display:dis|LessThan110  ; yes                    ;
+; VGA_display:dis|score_b[2]                          ; VGA_display:dis|LessThan112  ; yes                    ;
+; VGA_display:dis|score_b[1]                          ; VGA_display:dis|LessThan112  ; yes                    ;
+; VGA_display:dis|score_b[3]                          ; VGA_display:dis|LessThan112  ; yes                    ;
+; VGA_display:dis|score_b[0]                          ; VGA_display:dis|LessThan112  ; yes                    ;
+; Number of user-specified and inferred latches = 32  ;                              ;                        ;
 +-----------------------------------------------------+------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
@@ -420,8 +437,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------------------------+---------------------------------------------+
 ; Register name                           ; Reason for Removal                          ;
 +-----------------------------------------+---------------------------------------------+
-; VGA_display:dis|b                       ; Stuck at GND due to stuck port data_in      ;
-; VGA_display:dis|m[0..6]                 ; Stuck at GND due to stuck port clock        ;
 ; VGA_display:dis|ball_centery[0]         ; Merged with VGA_display:dis|ball_centerx[0] ;
 ; VGA_display:dis|block1_r[7]             ; Stuck at GND due to stuck port data_in      ;
 ; VGA_display:dis|block1_r[1..2]          ; Stuck at VCC due to stuck port data_in      ;
@@ -520,19 +535,11 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; VGA_display:dis|block11_d[1..2]         ; Stuck at VCC due to stuck port data_in      ;
 ; VGA_display:dis|block11_u[5,7]          ; Stuck at GND due to stuck port data_in      ;
 ; VGA_display:dis|block11_u[1,3]          ; Stuck at VCC due to stuck port data_in      ;
-; Total Number of Removed Registers = 651 ;                                             ;
+; VGA_display:dis|block12_r[7]            ; Stuck at GND due to stuck port data_in      ;
+; VGA_display:dis|block12_r[1..2]         ; Stuck at VCC due to stuck port data_in      ;
+; Total Number of Removed Registers = 643 ;                                             ;
 +-----------------------------------------+---------------------------------------------+
 * Table truncated at 100 items. To change the number of removed registers reported, set the "Number of Removed Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                             ;
-+-------------------+---------------------------+-----------------------------------------------------------------------------------------+
-; Register name     ; Reason for Removal        ; Registers Removed due to This Register                                                  ;
-+-------------------+---------------------------+-----------------------------------------------------------------------------------------+
-; VGA_display:dis|b ; Stuck at GND              ; VGA_display:dis|m[6], VGA_display:dis|m[5], VGA_display:dis|m[4], VGA_display:dis|m[3], ;
-;                   ; due to stuck port data_in ; VGA_display:dis|m[2], VGA_display:dis|m[1], VGA_display:dis|m[0]                        ;
-+-------------------+---------------------------+-----------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -540,12 +547,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 259   ;
-; Number of registers using Synchronous Clear  ; 33    ;
+; Total registers                              ; 266   ;
+; Number of registers using Synchronous Clear  ; 40    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 210   ;
+; Number of registers using Asynchronous Clear ; 217   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 88    ;
+; Number of registers using Clock Enable       ; 92    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -555,35 +562,37 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------------------------+---------+
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
-; VGA_display:dis|board_cx[7]             ; 7       ;
-; VGA_display:dis|board_cx[6]             ; 7       ;
-; VGA_display:dis|board_cx[5]             ; 7       ;
-; VGA_display:dis|board_cx[4]             ; 7       ;
+; VGA_display:dis|board_cx[7]             ; 5       ;
+; VGA_display:dis|board_cx[6]             ; 5       ;
+; VGA_display:dis|board_cx[5]             ; 5       ;
+; VGA_display:dis|board_cx[4]             ; 5       ;
 ; VGA_display:dis|board_cx[3]             ; 7       ;
-; VGA_display:dis|board_cx[1]             ; 6       ;
-; VGA_display:dis|ball_centery[1]         ; 11      ;
-; VGA_display:dis|ball_centery[6]         ; 6       ;
-; VGA_display:dis|ball_centery[8]         ; 6       ;
-; VGA_display:dis|ball_centery[7]         ; 6       ;
-; VGA_display:dis|ball_centerx[2]         ; 19      ;
-; VGA_display:dis|ball_centerx[1]         ; 18      ;
-; VGA_display:dis|ball_centerx[3]         ; 17      ;
-; VGA_display:dis|ball_centerx[8]         ; 18      ;
+; VGA_display:dis|board_cx[1]             ; 8       ;
+; VGA_display:dis|ball_centery[5]         ; 13      ;
+; VGA_display:dis|ball_centery[3]         ; 11      ;
+; VGA_display:dis|ball_centerx[4]         ; 15      ;
+; VGA_display:dis|ball_centerx[2]         ; 14      ;
 ; VGA_display:dis|block2_r[4]             ; 13      ;
 ; VGA_display:dis|block3_r[5]             ; 14      ;
-; VGA_display:dis|block16_r[5]            ; 13      ;
-; VGA_display:dis|block6_r[5]             ; 17      ;
-; VGA_display:dis|block7_r[7]             ; 13      ;
+; VGA_display:dis|block10_l[4]            ; 18      ;
+; VGA_display:dis|block8_r[6]             ; 25      ;
+; VGA_display:dis|block5_r[6]             ; 9       ;
+; VGA_display:dis|block16_r[5]            ; 19      ;
+; VGA_display:dis|block6_r[7]             ; 22      ;
+; VGA_display:dis|block9_l[5]             ; 17      ;
+; VGA_display:dis|block11_l[7]            ; 17      ;
+; VGA_display:dis|block7_r[4]             ; 13      ;
+; VGA_display:dis|block4_r[5]             ; 8       ;
 ; VGA_sm:sm|Hs                            ; 2       ;
 ; VGA_sm:sm|Vs                            ; 2       ;
-; VGA_display:dis|blk_state[1]            ; 3       ;
-; VGA_display:dis|blk_state[2]            ; 5       ;
-; VGA_display:dis|blk_state[4]            ; 6       ;
-; VGA_display:dis|blk_state[3]            ; 4       ;
-; VGA_display:dis|ball_ydir               ; 13      ;
-; VGA_display:dis|ball_xdir               ; 13      ;
+; VGA_display:dis|blk_state[1]            ; 10      ;
+; VGA_display:dis|blk_state[4]            ; 10      ;
+; VGA_display:dis|blk_state[3]            ; 11      ;
+; VGA_display:dis|blk_state[2]            ; 12      ;
+; VGA_display:dis|ball_ydir               ; 12      ;
+; VGA_display:dis|ball_xdir               ; 10      ;
 ; VGA_display:dis|n[0]                    ; 6       ;
-; Total number of inverted registers = 28 ;         ;
+; Total number of inverted registers = 30 ;         ;
 +-----------------------------------------+---------+
 
 
@@ -592,56 +601,57 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |vga_d|i[30]                        ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 0 LEs                ; 8 LEs                  ; Yes        ; |vga_d|VGA_display:dis|board_cx[9]  ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 0 LEs                ; 8 LEs                  ; Yes        ; |vga_d|VGA_display:dis|block11_r[5] ;
-; 17:1               ; 19 bits   ; 209 LEs       ; 0 LEs                ; 209 LEs                ; Yes        ; |vga_d|VGA_display:dis|block1_l[6]  ;
-; 17:1               ; 20 bits   ; 220 LEs       ; 0 LEs                ; 220 LEs                ; Yes        ; |vga_d|VGA_display:dis|block8_l[1]  ;
-; 17:1               ; 18 bits   ; 198 LEs       ; 0 LEs                ; 198 LEs                ; Yes        ; |vga_d|VGA_display:dis|block10_d[3] ;
-; 17:1               ; 16 bits   ; 176 LEs       ; 0 LEs                ; 176 LEs                ; Yes        ; |vga_d|VGA_display:dis|block12_u[0] ;
-; 17:1               ; 18 bits   ; 198 LEs       ; 0 LEs                ; 198 LEs                ; Yes        ; |vga_d|VGA_display:dis|block3_l[0]  ;
-; 19:1               ; 20 bits   ; 240 LEs       ; 0 LEs                ; 240 LEs                ; Yes        ; |vga_d|VGA_display:dis|block4_d[6]  ;
-; 20:1               ; 21 bits   ; 273 LEs       ; 0 LEs                ; 273 LEs                ; Yes        ; |vga_d|VGA_display:dis|block13_r[2] ;
-; 21:1               ; 20 bits   ; 280 LEs       ; 0 LEs                ; 280 LEs                ; Yes        ; |vga_d|VGA_display:dis|block2_u[0]  ;
-; 21:1               ; 19 bits   ; 266 LEs       ; 0 LEs                ; 266 LEs                ; Yes        ; |vga_d|VGA_display:dis|block5_l[6]  ;
-; 22:1               ; 19 bits   ; 266 LEs       ; 0 LEs                ; 266 LEs                ; Yes        ; |vga_d|VGA_display:dis|block14_u[2] ;
-; 23:1               ; 14 bits   ; 210 LEs       ; 0 LEs                ; 210 LEs                ; Yes        ; |vga_d|VGA_display:dis|block11_u[2] ;
-; 23:1               ; 20 bits   ; 300 LEs       ; 0 LEs                ; 300 LEs                ; Yes        ; |vga_d|VGA_display:dis|block6_r[4]  ;
-; 23:1               ; 18 bits   ; 270 LEs       ; 0 LEs                ; 270 LEs                ; Yes        ; |vga_d|VGA_display:dis|block9_r[0]  ;
-; 23:1               ; 4 bits    ; 60 LEs        ; 0 LEs                ; 60 LEs                 ; Yes        ; |vga_d|VGA_display:dis|block12_r[0] ;
-; 24:1               ; 21 bits   ; 336 LEs       ; 0 LEs                ; 336 LEs                ; Yes        ; |vga_d|VGA_display:dis|block15_u[1] ;
-; 26:1               ; 20 bits   ; 340 LEs       ; 0 LEs                ; 340 LEs                ; Yes        ; |vga_d|VGA_display:dis|block16_d[3] ;
-; 28:1               ; 21 bits   ; 378 LEs       ; 0 LEs                ; 378 LEs                ; Yes        ; |vga_d|VGA_display:dis|block17_r[0] ;
-; 28:1               ; 17 bits   ; 306 LEs       ; 0 LEs                ; 306 LEs                ; Yes        ; |vga_d|VGA_display:dis|block7_u[5]  ;
-; 31:1               ; 18 bits   ; 360 LEs       ; 0 LEs                ; 360 LEs                ; Yes        ; |vga_d|VGA_display:dis|block18_u[0] ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 0 LEs                ; 12 LEs                 ; Yes        ; |vga_d|VGA_display:dis|board_cx[3]  ;
-; 7:1                ; 7 bits    ; 28 LEs        ; 0 LEs                ; 28 LEs                 ; Yes        ; |vga_d|VGA_display:dis|block11_r[8] ;
-; 17:1               ; 18 bits   ; 198 LEs       ; 0 LEs                ; 198 LEs                ; Yes        ; |vga_d|VGA_display:dis|block1_u[3]  ;
-; 17:1               ; 17 bits   ; 187 LEs       ; 0 LEs                ; 187 LEs                ; Yes        ; |vga_d|VGA_display:dis|block8_r[6]  ;
-; 17:1               ; 19 bits   ; 209 LEs       ; 0 LEs                ; 209 LEs                ; Yes        ; |vga_d|VGA_display:dis|block10_u[4] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |vga_d|i[31]                        ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |vga_d|VGA_display:dis|board_cx[8]  ;
+; 17:1               ; 19 bits   ; 209 LEs       ; 0 LEs                ; 209 LEs                ; Yes        ; |vga_d|VGA_display:dis|block1_r[8]  ;
+; 17:1               ; 20 bits   ; 220 LEs       ; 0 LEs                ; 220 LEs                ; Yes        ; |vga_d|VGA_display:dis|block8_d[1]  ;
+; 17:1               ; 18 bits   ; 198 LEs       ; 0 LEs                ; 198 LEs                ; Yes        ; |vga_d|VGA_display:dis|block10_l[1] ;
+; 17:1               ; 16 bits   ; 176 LEs       ; 0 LEs                ; 176 LEs                ; Yes        ; |vga_d|VGA_display:dis|block12_l[6] ;
+; 17:1               ; 18 bits   ; 198 LEs       ; 0 LEs                ; 198 LEs                ; Yes        ; |vga_d|VGA_display:dis|block3_r[4]  ;
+; 18:1               ; 4 bits    ; 48 LEs        ; 0 LEs                ; 48 LEs                 ; Yes        ; |vga_d|VGA_display:dis|block12_r[3] ;
+; 19:1               ; 20 bits   ; 240 LEs       ; 0 LEs                ; 240 LEs                ; Yes        ; |vga_d|VGA_display:dis|block4_l[0]  ;
+; 20:1               ; 21 bits   ; 273 LEs       ; 0 LEs                ; 273 LEs                ; Yes        ; |vga_d|VGA_display:dis|block13_r[0] ;
+; 21:1               ; 20 bits   ; 280 LEs       ; 0 LEs                ; 280 LEs                ; Yes        ; |vga_d|VGA_display:dis|block2_u[8]  ;
+; 21:1               ; 19 bits   ; 266 LEs       ; 0 LEs                ; 266 LEs                ; Yes        ; |vga_d|VGA_display:dis|block5_r[7]  ;
+; 22:1               ; 19 bits   ; 266 LEs       ; 0 LEs                ; 266 LEs                ; Yes        ; |vga_d|VGA_display:dis|block14_l[1] ;
+; 23:1               ; 20 bits   ; 300 LEs       ; 0 LEs                ; 300 LEs                ; Yes        ; |vga_d|VGA_display:dis|block6_r[0]  ;
+; 23:1               ; 18 bits   ; 270 LEs       ; 0 LEs                ; 270 LEs                ; Yes        ; |vga_d|VGA_display:dis|block9_r[5]  ;
+; 23:1               ; 14 bits   ; 210 LEs       ; 0 LEs                ; 210 LEs                ; Yes        ; |vga_d|VGA_display:dis|block11_l[0] ;
+; 24:1               ; 2 bits    ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |vga_d|VGA_display:dis|block11_r[5] ;
+; 24:1               ; 21 bits   ; 336 LEs       ; 0 LEs                ; 336 LEs                ; Yes        ; |vga_d|VGA_display:dis|block15_u[7] ;
+; 26:1               ; 20 bits   ; 340 LEs       ; 0 LEs                ; 340 LEs                ; Yes        ; |vga_d|VGA_display:dis|block16_d[6] ;
+; 28:1               ; 17 bits   ; 306 LEs       ; 0 LEs                ; 306 LEs                ; Yes        ; |vga_d|VGA_display:dis|block7_l[1]  ;
+; 28:1               ; 21 bits   ; 378 LEs       ; 0 LEs                ; 378 LEs                ; Yes        ; |vga_d|VGA_display:dis|block17_u[7] ;
+; 31:1               ; 18 bits   ; 360 LEs       ; 0 LEs                ; 360 LEs                ; Yes        ; |vga_d|VGA_display:dis|block18_l[3] ;
+; 49:1               ; 7 bits    ; 224 LEs       ; 7 LEs                ; 217 LEs                ; Yes        ; |vga_d|VGA_display:dis|m[6]         ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 0 LEs                ; 12 LEs                 ; Yes        ; |vga_d|VGA_display:dis|board_cx[7]  ;
+; 17:1               ; 18 bits   ; 198 LEs       ; 0 LEs                ; 198 LEs                ; Yes        ; |vga_d|VGA_display:dis|block1_r[4]  ;
+; 17:1               ; 17 bits   ; 187 LEs       ; 0 LEs                ; 187 LEs                ; Yes        ; |vga_d|VGA_display:dis|block8_u[4]  ;
+; 17:1               ; 19 bits   ; 209 LEs       ; 0 LEs                ; 209 LEs                ; Yes        ; |vga_d|VGA_display:dis|block10_r[1] ;
 ; 17:1               ; 12 bits   ; 132 LEs       ; 0 LEs                ; 132 LEs                ; Yes        ; |vga_d|VGA_display:dis|block12_u[6] ;
-; 17:1               ; 18 bits   ; 198 LEs       ; 0 LEs                ; 198 LEs                ; Yes        ; |vga_d|VGA_display:dis|block3_d[5]  ;
-; 19:1               ; 16 bits   ; 192 LEs       ; 0 LEs                ; 192 LEs                ; Yes        ; |vga_d|VGA_display:dis|block4_u[3]  ;
-; 20:1               ; 16 bits   ; 208 LEs       ; 0 LEs                ; 208 LEs                ; Yes        ; |vga_d|VGA_display:dis|block13_l[3] ;
-; 21:1               ; 16 bits   ; 224 LEs       ; 0 LEs                ; 224 LEs                ; Yes        ; |vga_d|VGA_display:dis|block2_l[5]  ;
-; 21:1               ; 17 bits   ; 238 LEs       ; 0 LEs                ; 238 LEs                ; Yes        ; |vga_d|VGA_display:dis|block5_u[3]  ;
-; 22:1               ; 18 bits   ; 252 LEs       ; 0 LEs                ; 252 LEs                ; Yes        ; |vga_d|VGA_display:dis|block14_u[3] ;
-; 23:1               ; 14 bits   ; 210 LEs       ; 0 LEs                ; 210 LEs                ; Yes        ; |vga_d|VGA_display:dis|block11_l[7] ;
-; 23:1               ; 17 bits   ; 255 LEs       ; 0 LEs                ; 255 LEs                ; Yes        ; |vga_d|VGA_display:dis|block6_u[1]  ;
+; 17:1               ; 18 bits   ; 198 LEs       ; 0 LEs                ; 198 LEs                ; Yes        ; |vga_d|VGA_display:dis|block3_d[3]  ;
+; 18:1               ; 5 bits    ; 60 LEs        ; 0 LEs                ; 60 LEs                 ; Yes        ; |vga_d|VGA_display:dis|block12_r[1] ;
+; 19:1               ; 16 bits   ; 192 LEs       ; 0 LEs                ; 192 LEs                ; Yes        ; |vga_d|VGA_display:dis|block4_d[4]  ;
+; 20:1               ; 16 bits   ; 208 LEs       ; 0 LEs                ; 208 LEs                ; Yes        ; |vga_d|VGA_display:dis|block13_d[4] ;
+; 21:1               ; 16 bits   ; 224 LEs       ; 0 LEs                ; 224 LEs                ; Yes        ; |vga_d|VGA_display:dis|block2_u[1]  ;
+; 21:1               ; 17 bits   ; 238 LEs       ; 0 LEs                ; 238 LEs                ; Yes        ; |vga_d|VGA_display:dis|block5_r[8]  ;
+; 22:1               ; 18 bits   ; 252 LEs       ; 0 LEs                ; 252 LEs                ; Yes        ; |vga_d|VGA_display:dis|block14_r[1] ;
+; 23:1               ; 17 bits   ; 255 LEs       ; 0 LEs                ; 255 LEs                ; Yes        ; |vga_d|VGA_display:dis|block6_l[3]  ;
 ; 23:1               ; 19 bits   ; 285 LEs       ; 0 LEs                ; 285 LEs                ; Yes        ; |vga_d|VGA_display:dis|block9_r[8]  ;
-; 23:1               ; 5 bits    ; 75 LEs        ; 0 LEs                ; 75 LEs                 ; Yes        ; |vga_d|VGA_display:dis|block12_r[4] ;
-; 24:1               ; 16 bits   ; 256 LEs       ; 0 LEs                ; 256 LEs                ; Yes        ; |vga_d|VGA_display:dis|block15_l[5] ;
-; 26:1               ; 17 bits   ; 289 LEs       ; 0 LEs                ; 289 LEs                ; Yes        ; |vga_d|VGA_display:dis|block16_r[8] ;
-; 28:1               ; 16 bits   ; 288 LEs       ; 0 LEs                ; 288 LEs                ; Yes        ; |vga_d|VGA_display:dis|block17_u[4] ;
-; 28:1               ; 20 bits   ; 360 LEs       ; 0 LEs                ; 360 LEs                ; Yes        ; |vga_d|VGA_display:dis|block7_u[1]  ;
-; 31:1               ; 19 bits   ; 380 LEs       ; 0 LEs                ; 380 LEs                ; Yes        ; |vga_d|VGA_display:dis|block18_u[5] ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |vga_d|VGA_display:dis|RED          ;
-; 32:1               ; 10 bits   ; 210 LEs       ; 200 LEs              ; 10 LEs                 ; No         ; |vga_d|VGA_display:dis|addr_res[14] ;
+; 23:1               ; 14 bits   ; 210 LEs       ; 0 LEs                ; 210 LEs                ; Yes        ; |vga_d|VGA_display:dis|block11_d[2] ;
+; 24:1               ; 7 bits    ; 112 LEs       ; 0 LEs                ; 112 LEs                ; Yes        ; |vga_d|VGA_display:dis|block11_r[4] ;
+; 24:1               ; 16 bits   ; 256 LEs       ; 0 LEs                ; 256 LEs                ; Yes        ; |vga_d|VGA_display:dis|block15_l[4] ;
+; 26:1               ; 17 bits   ; 289 LEs       ; 0 LEs                ; 289 LEs                ; Yes        ; |vga_d|VGA_display:dis|block16_u[6] ;
+; 28:1               ; 20 bits   ; 360 LEs       ; 0 LEs                ; 360 LEs                ; Yes        ; |vga_d|VGA_display:dis|block7_r[4]  ;
+; 28:1               ; 16 bits   ; 288 LEs       ; 0 LEs                ; 288 LEs                ; Yes        ; |vga_d|VGA_display:dis|block17_d[2] ;
+; 31:1               ; 19 bits   ; 380 LEs       ; 0 LEs                ; 380 LEs                ; Yes        ; |vga_d|VGA_display:dis|block18_l[8] ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |vga_d|VGA_display:dis|RED          ;
+; 50:1               ; 10 bits   ; 330 LEs       ; 320 LEs              ; 10 LEs                 ; No         ; |vga_d|VGA_display:dis|addr_res[13] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------+
-; Source assignments for VGA_display:dis|rom1:comb_30121|altsyncram:altsyncram_component|altsyncram_ub91:auto_generated ;
+; Source assignments for VGA_display:dis|rom1:comb_31101|altsyncram:altsyncram_component|altsyncram_ub91:auto_generated ;
 +---------------------------------+--------------------+------+---------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                      ;
 +---------------------------------+--------------------+------+---------------------------------------------------------+
@@ -654,17 +664,18 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-------------------+-------+----------------------------------+
 ; Parameter Name    ; Value ; Type                             ;
 +-------------------+-------+----------------------------------+
-; x_left            ; 0     ; Signed Integer                   ;
+; x_left            ; 10    ; Signed Integer                   ;
 ; x_right           ; 540   ; Signed Integer                   ;
 ; y_up              ; 0     ; Signed Integer                   ;
-; y_down            ; 480   ; Signed Integer                   ;
+; y_down            ; 479   ; Signed Integer                   ;
 ; board_centerx     ; 250   ; Signed Integer                   ;
 ; half_board_width  ; 55    ; Signed Integer                   ;
 ; board_width       ; 110   ; Signed Integer                   ;
 ; board_centery     ; 470   ; Signed Integer                   ;
 ; half_board_height ; 10    ; Signed Integer                   ;
-; board_height      ; 20    ; Signed Integer                   ;
-; board_speed       ; 1     ; Signed Integer                   ;
+; board_height      ; 0     ; Signed Integer                   ;
+; board_speedx      ; 2     ; Signed Integer                   ;
+; board_speedy      ; 1     ; Signed Integer                   ;
 ; blk1_l            ; 60    ; Signed Integer                   ;
 ; blk1_r            ; 118   ; Signed Integer                   ;
 ; blk1_u            ; 30    ; Signed Integer                   ;
@@ -748,7 +759,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: VGA_display:dis|rom1:comb_30121|altsyncram:altsyncram_component ;
+; Parameter Settings for User Entity Instance: VGA_display:dis|rom1:comb_31101|altsyncram:altsyncram_component ;
 +------------------------------------+----------------------+--------------------------------------------------+
 ; Parameter Name                     ; Value                ; Type                                             ;
 +------------------------------------+----------------------+--------------------------------------------------+
@@ -934,6 +945,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_divide:Div1 ;
++------------------------+----------------+----------------------------------------+
+; Parameter Name         ; Value          ; Type                                   ;
++------------------------+----------------+----------------------------------------+
+; LPM_WIDTHN             ; 7              ; Untyped                                ;
+; LPM_WIDTHD             ; 4              ; Untyped                                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
+; LPM_PIPELINE           ; 0              ; Untyped                                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                ;
+; CBXI_PARAMETER         ; lpm_divide_9gm ; Untyped                                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                         ;
++------------------------+----------------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_mult:Mult32   ;
 +------------------------------------------------+-------------+---------------------+
@@ -982,6 +1016,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                                ;
 ; CBXI_PARAMETER         ; lpm_divide_9gm ; Untyped                                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                         ;
++------------------------+----------------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: VGA_display:dis|lpm_divide:Mod1 ;
++------------------------+----------------+----------------------------------------+
+; Parameter Name         ; Value          ; Type                                   ;
++------------------------+----------------+----------------------------------------+
+; LPM_WIDTHN             ; 7              ; Untyped                                ;
+; LPM_WIDTHD             ; 4              ; Untyped                                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
+; LPM_PIPELINE           ; 0              ; Untyped                                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                ;
+; CBXI_PARAMETER         ; lpm_divide_c8m ; Untyped                                ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                                ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                             ;
@@ -1208,7 +1265,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Name                                      ; Value                                                           ;
 +-------------------------------------------+-----------------------------------------------------------------+
 ; Number of entity instances                ; 1                                                               ;
-; Entity Instance                           ; VGA_display:dis|rom1:comb_30121|altsyncram:altsyncram_component ;
+; Entity Instance                           ; VGA_display:dis|rom1:comb_31101|altsyncram:altsyncram_component ;
 ;     -- OPERATION_MODE                     ; ROM                                                             ;
 ;     -- WIDTH_A                            ; 3                                                               ;
 ;     -- NUMWORDS_A                         ; 65536                                                           ;
@@ -1357,11 +1414,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Wed Mar 12 00:30:08 2014
+    Info: Processing started: Wed Mar 12 22:41:01 2014
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off vga_d -c vga_d
 Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info: Found 1 design units, including 1 entities, in source file ps2_top.v
     Info: Found entity 1: ps2_top
+Warning (10275): Verilog HDL Module Instantiation warning at vga_d.v(62): ignored dangling comma in List of Port Connections
 Info: Found 1 design units, including 1 entities, in source file vga_d.v
     Info: Found entity 1: vga_d
 Info: Found 1 design units, including 1 entities, in source file vga_display.v
@@ -1370,10 +1428,10 @@ Info: Found 1 design units, including 1 entities, in source file vga_sm.v
     Info: Found entity 1: VGA_sm
 Info: Found 1 design units, including 1 entities, in source file rom1.v
     Info: Found entity 1: rom1
-Warning (10236): Verilog HDL Implicit Net warning at VGA_display.v(733): created implicit net for "hsync"
-Warning (10236): Verilog HDL Implicit Net warning at VGA_display.v(733): created implicit net for "vsync"
-Critical Warning (10846): Verilog HDL Instantiation warning at vga_d.v(41): instance has no name
-Critical Warning (10846): Verilog HDL Instantiation warning at VGA_display.v(891): instance has no name
+Warning (10236): Verilog HDL Implicit Net warning at VGA_display.v(929): created implicit net for "hsync"
+Warning (10236): Verilog HDL Implicit Net warning at VGA_display.v(929): created implicit net for "vsync"
+Critical Warning (10846): Verilog HDL Instantiation warning at vga_d.v(40): instance has no name
+Critical Warning (10846): Verilog HDL Instantiation warning at VGA_display.v(1072): instance has no name
 Info: Elaborating entity "vga_d" for the top level hierarchy
 Info: Elaborating entity "ps2_top" for hierarchy "ps2_top:comb_154"
 Warning (10036): Verilog HDL or VHDL warning at ps2_top.v(16): object "wei" assigned a value but never read
@@ -1385,249 +1443,373 @@ Info: Elaborating entity "VGA_sm" for hierarchy "VGA_sm:sm"
 Warning (10230): Verilog HDL assignment warning at VGA_sm.v(48): truncated value with size 32 to match size of target (10)
 Warning (10230): Verilog HDL assignment warning at VGA_sm.v(49): truncated value with size 32 to match size of target (10)
 Info: Elaborating entity "VGA_display" for hierarchy "VGA_display:dis"
-Warning (10036): Verilog HDL or VHDL warning at VGA_display.v(17): object "gameover" assigned a value but never read
-Warning (10235): Verilog HDL Always Construct warning at VGA_display.v(33): variable "RGB" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at VGA_display.v(35): variable "RGBx" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(54): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(55): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(68): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(75): truncated value with size 32 to match size of target (10)
-Warning (10240): Verilog HDL Always Construct warning at VGA_display.v(50): inferring latch(es) for variable "board_cy", which holds its previous value in one or more paths through the always construct
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(146): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(147): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(148): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(149): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(150): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(151): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(152): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(153): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(154): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(155): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(156): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(157): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(158): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(159): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(160): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(161): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(162): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(163): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(164): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(165): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(168): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(170): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(172): truncated value with size 32 to match size of target (1)
+Warning (10235): Verilog HDL Always Construct warning at VGA_display.v(32): variable "gameoverflag" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at VGA_display.v(36): variable "RGBx" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at VGA_display.v(38): variable "RGB" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at VGA_display.v(43): variable "RGBx" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at VGA_display.v(45): variable "RGB" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(65): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(66): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(79): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(86): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(93): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(100): truncated value with size 32 to match size of target (10)
+Warning (10240): Verilog HDL Always Construct warning at VGA_display.v(61): inferring latch(es) for variable "board_cx", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at VGA_display.v(61): inferring latch(es) for variable "board_cy", which holds its previous value in one or more paths through the always construct
 Warning (10230): Verilog HDL assignment warning at VGA_display.v(174): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(179): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(183): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(185): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(195): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(198): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(203): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(208): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(214): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(219): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(224): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(229): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(234): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(238): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(243): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(248): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(252): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(257): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(262): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(175): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(176): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(177): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(178): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(179): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(180): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(181): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(182): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(183): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(184): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(185): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(186): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(187): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(188): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(189): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(190): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(191): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(192): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(193): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(196): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(198): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(200): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(210): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(221): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(223): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(224): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(228): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(230): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(231): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(235): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(237): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(238): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(242): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(244): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(245): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(250): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(251): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(252): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(256): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(258): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(259): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(263): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(265): truncated value with size 32 to match size of target (1)
 Warning (10230): Verilog HDL assignment warning at VGA_display.v(266): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(271): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(276): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(281): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(286): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(291): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(275): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(277): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(278): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(282): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(284): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(285): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(295): truncated value with size 32 to match size of target (1)
 Warning (10230): Verilog HDL assignment warning at VGA_display.v(296): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(297): truncated value with size 32 to match size of target (7)
 Warning (10230): Verilog HDL assignment warning at VGA_display.v(302): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(305): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(310): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(303): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(304): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(314): truncated value with size 32 to match size of target (1)
 Warning (10230): Verilog HDL assignment warning at VGA_display.v(315): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(321): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(326): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(331): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(316): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(321): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(322): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(323): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(328): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(329): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(330): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(335): truncated value with size 32 to match size of target (1)
 Warning (10230): Verilog HDL assignment warning at VGA_display.v(336): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(341): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(345): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(337): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(342): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(343): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(344): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(349): truncated value with size 32 to match size of target (1)
 Warning (10230): Verilog HDL assignment warning at VGA_display.v(350): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(351): truncated value with size 32 to match size of target (7)
 Warning (10230): Verilog HDL assignment warning at VGA_display.v(355): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(359): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(364): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(369): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(373): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(378): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(357): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(358): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(369): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(371): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(372): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(376): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(378): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(379): truncated value with size 32 to match size of target (7)
 Warning (10230): Verilog HDL assignment warning at VGA_display.v(383): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(388): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(393): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(398): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(403): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(409): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(412): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(417): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(422): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(427): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(433): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(436): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(441): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(447): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(450): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(455): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(461): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(464): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(469): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(475): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(478): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(483): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(489): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(492): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(497): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(503): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(506): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(511): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(385): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(386): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(391): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(392): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(393): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(398): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(399): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(400): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(405): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(406): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(407): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(412): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(413): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(414): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(424): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(425): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(426): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(431): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(432): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(433): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(443): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(444): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(445): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(449): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(451): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(452): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(462): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(463): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(464): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(469): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(470): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(471): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(476): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(477): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(478): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(483): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(484): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(485): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(490): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(491): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(492): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(497): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(498): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(499): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(504): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(505): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(506): truncated value with size 32 to match size of target (7)
 Warning (10230): Verilog HDL assignment warning at VGA_display.v(516): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(521): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(528): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(531): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(536): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(541): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(546): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(552): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(555): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(560): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(566): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(569): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(574): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(580): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(583): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(588): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(594): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(597): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(602): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(518): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(519): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(523): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(525): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(526): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(530): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(532): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(533): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(537): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(539): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(540): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(549): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(551): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(552): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(556): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(558): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(559): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(568): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(570): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(571): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(575): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(577): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(578): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(587): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(589): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(590): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(594): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(596): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(597): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(606): truncated value with size 32 to match size of target (9)
 Warning (10230): Verilog HDL assignment warning at VGA_display.v(608): truncated value with size 32 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(611): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(616): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(622): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(609): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(613): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(615): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(616): truncated value with size 32 to match size of target (7)
 Warning (10230): Verilog HDL assignment warning at VGA_display.v(625): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(630): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(635): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(640): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(657): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(659): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(667): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(669): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(767): truncated value with size 32 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(775): truncated value with size 32 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(782): truncated value with size 32 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(783): truncated value with size 32 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(788): truncated value with size 32 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(789): truncated value with size 32 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(796): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(797): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(798): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(799): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(800): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(801): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(802): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(803): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(804): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(805): truncated value with size 32 to match size of target (16)
-Warning (10270): Verilog HDL Case Statement warning at VGA_display.v(795): incomplete case statement has no default case item
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(812): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(813): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(814): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(815): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(816): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(817): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(818): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(819): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(820): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(821): truncated value with size 32 to match size of target (16)
-Warning (10270): Verilog HDL Case Statement warning at VGA_display.v(811): incomplete case statement has no default case item
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(828): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(829): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(830): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(831): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(832): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(833): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(834): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(835): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(836): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(837): truncated value with size 32 to match size of target (16)
-Warning (10270): Verilog HDL Case Statement warning at VGA_display.v(827): incomplete case statement has no default case item
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(844): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(845): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(846): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(847): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(848): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(849): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(850): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(851): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(852): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(853): truncated value with size 32 to match size of target (16)
-Warning (10270): Verilog HDL Case Statement warning at VGA_display.v(843): incomplete case statement has no default case item
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(858): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(860): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(862): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(865): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(868): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(871): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(874): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(877): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at VGA_display.v(880): truncated value with size 32 to match size of target (16)
-Warning (10240): Verilog HDL Always Construct warning at VGA_display.v(780): inferring latch(es) for variable "level_a", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at VGA_display.v(780): inferring latch(es) for variable "level_b", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at VGA_display.v(780): inferring latch(es) for variable "score_a", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at VGA_display.v(780): inferring latch(es) for variable "score_b", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at VGA_display.v(780): inferring latch(es) for variable "addr_res", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "addr_res[0]" at VGA_display.v(780)
-Info (10041): Inferred latch for "addr_res[1]" at VGA_display.v(780)
-Info (10041): Inferred latch for "addr_res[2]" at VGA_display.v(780)
-Info (10041): Inferred latch for "addr_res[3]" at VGA_display.v(780)
-Info (10041): Inferred latch for "addr_res[4]" at VGA_display.v(780)
-Info (10041): Inferred latch for "addr_res[5]" at VGA_display.v(780)
-Info (10041): Inferred latch for "addr_res[6]" at VGA_display.v(780)
-Info (10041): Inferred latch for "addr_res[7]" at VGA_display.v(780)
-Info (10041): Inferred latch for "addr_res[8]" at VGA_display.v(780)
-Info (10041): Inferred latch for "addr_res[9]" at VGA_display.v(780)
-Info (10041): Inferred latch for "addr_res[10]" at VGA_display.v(780)
-Info (10041): Inferred latch for "addr_res[11]" at VGA_display.v(780)
-Info (10041): Inferred latch for "addr_res[12]" at VGA_display.v(780)
-Info (10041): Inferred latch for "addr_res[13]" at VGA_display.v(780)
-Info (10041): Inferred latch for "addr_res[14]" at VGA_display.v(780)
-Info (10041): Inferred latch for "addr_res[15]" at VGA_display.v(780)
-Info (10041): Inferred latch for "score_b[0]" at VGA_display.v(786)
-Info (10041): Inferred latch for "score_b[1]" at VGA_display.v(786)
-Info (10041): Inferred latch for "score_b[2]" at VGA_display.v(786)
-Info (10041): Inferred latch for "score_b[3]" at VGA_display.v(786)
-Info (10041): Inferred latch for "score_a[0]" at VGA_display.v(786)
-Info (10041): Inferred latch for "score_a[1]" at VGA_display.v(786)
-Info (10041): Inferred latch for "score_a[2]" at VGA_display.v(786)
-Info (10041): Inferred latch for "score_a[3]" at VGA_display.v(786)
-Info (10041): Inferred latch for "level_b[0]" at VGA_display.v(780)
-Info (10041): Inferred latch for "level_b[1]" at VGA_display.v(780)
-Info (10041): Inferred latch for "level_b[2]" at VGA_display.v(780)
-Info (10041): Inferred latch for "level_b[3]" at VGA_display.v(780)
-Info (10041): Inferred latch for "level_a[0]" at VGA_display.v(780)
-Info (10041): Inferred latch for "level_a[1]" at VGA_display.v(780)
-Info (10041): Inferred latch for "level_a[2]" at VGA_display.v(780)
-Info (10041): Inferred latch for "level_a[3]" at VGA_display.v(780)
-Info (10041): Inferred latch for "board_cy[0]" at VGA_display.v(50)
-Info (10041): Inferred latch for "board_cy[1]" at VGA_display.v(50)
-Info (10041): Inferred latch for "board_cy[2]" at VGA_display.v(50)
-Info (10041): Inferred latch for "board_cy[3]" at VGA_display.v(50)
-Info (10041): Inferred latch for "board_cy[4]" at VGA_display.v(50)
-Info (10041): Inferred latch for "board_cy[5]" at VGA_display.v(50)
-Info (10041): Inferred latch for "board_cy[6]" at VGA_display.v(50)
-Info (10041): Inferred latch for "board_cy[7]" at VGA_display.v(50)
-Info (10041): Inferred latch for "board_cy[8]" at VGA_display.v(50)
-Info (10041): Inferred latch for "board_cy[9]" at VGA_display.v(50)
-Info: Elaborating entity "rom1" for hierarchy "VGA_display:dis|rom1:comb_30121"
-Info: Elaborating entity "altsyncram" for hierarchy "VGA_display:dis|rom1:comb_30121|altsyncram:altsyncram_component"
-Info: Elaborated megafunction instantiation "VGA_display:dis|rom1:comb_30121|altsyncram:altsyncram_component"
-Info: Instantiated megafunction "VGA_display:dis|rom1:comb_30121|altsyncram:altsyncram_component" with the following parameter:
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(627): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(628): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(632): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(634): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(635): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(644): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(646): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(647): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(651): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(653): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(654): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(658): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(660): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(661): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(665): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(667): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(668): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(678): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(680): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(681): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(685): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(687): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(688): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(692): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(694): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(695): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(699): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(701): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(702): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(711): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(713): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(714): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(718): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(720): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(721): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(730): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(732): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(733): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(737): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(739): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(740): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(748): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(750): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(751): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(755): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(757): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(758): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(767): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(769): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(770): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(774): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(776): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(777): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(786): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(788): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(789): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(793): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(795): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(796): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(805): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(807): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(808): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(812): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(814): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(815): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(819): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(821): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(822): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(826): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(828): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(829): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(847): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(849): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(857): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(859): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(956): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(963): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(964): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(969): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(970): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(977): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(978): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(979): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(980): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(981): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(982): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(983): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(984): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(985): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(986): truncated value with size 32 to match size of target (16)
+Warning (10270): Verilog HDL Case Statement warning at VGA_display.v(976): incomplete case statement has no default case item
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(993): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(994): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(995): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(996): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(997): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(998): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(999): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1000): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1001): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1002): truncated value with size 32 to match size of target (16)
+Warning (10270): Verilog HDL Case Statement warning at VGA_display.v(992): incomplete case statement has no default case item
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1009): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1010): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1011): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1012): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1013): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1014): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1015): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1016): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1017): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1018): truncated value with size 32 to match size of target (16)
+Warning (10270): Verilog HDL Case Statement warning at VGA_display.v(1008): incomplete case statement has no default case item
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1025): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1026): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1027): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1028): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1029): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1030): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1031): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1032): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1033): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1034): truncated value with size 32 to match size of target (16)
+Warning (10270): Verilog HDL Case Statement warning at VGA_display.v(1024): incomplete case statement has no default case item
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1039): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1041): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1043): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1046): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1049): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1052): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1055): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1058): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at VGA_display.v(1061): truncated value with size 32 to match size of target (16)
+Warning (10240): Verilog HDL Always Construct warning at VGA_display.v(961): inferring latch(es) for variable "level_a", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at VGA_display.v(961): inferring latch(es) for variable "level_b", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at VGA_display.v(961): inferring latch(es) for variable "score_a", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at VGA_display.v(961): inferring latch(es) for variable "score_b", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at VGA_display.v(961): inferring latch(es) for variable "addr_res", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "addr_res[0]" at VGA_display.v(961)
+Info (10041): Inferred latch for "addr_res[1]" at VGA_display.v(961)
+Info (10041): Inferred latch for "addr_res[2]" at VGA_display.v(961)
+Info (10041): Inferred latch for "addr_res[3]" at VGA_display.v(961)
+Info (10041): Inferred latch for "addr_res[4]" at VGA_display.v(961)
+Info (10041): Inferred latch for "addr_res[5]" at VGA_display.v(961)
+Info (10041): Inferred latch for "addr_res[6]" at VGA_display.v(961)
+Info (10041): Inferred latch for "addr_res[7]" at VGA_display.v(961)
+Info (10041): Inferred latch for "addr_res[8]" at VGA_display.v(961)
+Info (10041): Inferred latch for "addr_res[9]" at VGA_display.v(961)
+Info (10041): Inferred latch for "addr_res[10]" at VGA_display.v(961)
+Info (10041): Inferred latch for "addr_res[11]" at VGA_display.v(961)
+Info (10041): Inferred latch for "addr_res[12]" at VGA_display.v(961)
+Info (10041): Inferred latch for "addr_res[13]" at VGA_display.v(961)
+Info (10041): Inferred latch for "addr_res[14]" at VGA_display.v(961)
+Info (10041): Inferred latch for "addr_res[15]" at VGA_display.v(961)
+Info (10041): Inferred latch for "score_b[0]" at VGA_display.v(967)
+Info (10041): Inferred latch for "score_b[1]" at VGA_display.v(967)
+Info (10041): Inferred latch for "score_b[2]" at VGA_display.v(967)
+Info (10041): Inferred latch for "score_b[3]" at VGA_display.v(967)
+Info (10041): Inferred latch for "score_a[0]" at VGA_display.v(967)
+Info (10041): Inferred latch for "score_a[1]" at VGA_display.v(967)
+Info (10041): Inferred latch for "score_a[2]" at VGA_display.v(967)
+Info (10041): Inferred latch for "score_a[3]" at VGA_display.v(967)
+Info (10041): Inferred latch for "level_b[0]" at VGA_display.v(961)
+Info (10041): Inferred latch for "level_b[1]" at VGA_display.v(961)
+Info (10041): Inferred latch for "level_b[2]" at VGA_display.v(961)
+Info (10041): Inferred latch for "level_b[3]" at VGA_display.v(961)
+Info (10041): Inferred latch for "level_a[0]" at VGA_display.v(961)
+Info (10041): Inferred latch for "level_a[1]" at VGA_display.v(961)
+Info (10041): Inferred latch for "level_a[2]" at VGA_display.v(961)
+Info (10041): Inferred latch for "level_a[3]" at VGA_display.v(961)
+Info (10041): Inferred latch for "board_cy[0]" at VGA_display.v(61)
+Info (10041): Inferred latch for "board_cy[1]" at VGA_display.v(61)
+Info (10041): Inferred latch for "board_cy[2]" at VGA_display.v(61)
+Info (10041): Inferred latch for "board_cy[3]" at VGA_display.v(61)
+Info (10041): Inferred latch for "board_cy[4]" at VGA_display.v(61)
+Info (10041): Inferred latch for "board_cy[5]" at VGA_display.v(61)
+Info (10041): Inferred latch for "board_cy[6]" at VGA_display.v(61)
+Info (10041): Inferred latch for "board_cy[7]" at VGA_display.v(61)
+Info (10041): Inferred latch for "board_cy[8]" at VGA_display.v(61)
+Info (10041): Inferred latch for "board_cy[9]" at VGA_display.v(61)
+Info (10041): Inferred latch for "board_cx[0]" at VGA_display.v(61)
+Info: Elaborating entity "rom1" for hierarchy "VGA_display:dis|rom1:comb_31101"
+Info: Elaborating entity "altsyncram" for hierarchy "VGA_display:dis|rom1:comb_31101|altsyncram:altsyncram_component"
+Info: Elaborated megafunction instantiation "VGA_display:dis|rom1:comb_31101|altsyncram:altsyncram_component"
+Info: Instantiated megafunction "VGA_display:dis|rom1:comb_31101|altsyncram:altsyncram_component" with the following parameter:
     Info: Parameter "address_aclr_a" = "NONE"
     Info: Parameter "clock_enable_input_a" = "BYPASS"
     Info: Parameter "clock_enable_output_a" = "BYPASS"
@@ -1644,28 +1826,22 @@ Info: Instantiated megafunction "VGA_display:dis|rom1:comb_30121|altsyncram:alts
     Info: Parameter "width_byteena_a" = "1"
 Info: Found 1 design units, including 1 entities, in source file db/altsyncram_ub91.tdf
     Info: Found entity 1: altsyncram_ub91
-Info: Elaborating entity "altsyncram_ub91" for hierarchy "VGA_display:dis|rom1:comb_30121|altsyncram:altsyncram_component|altsyncram_ub91:auto_generated"
+Info: Elaborating entity "altsyncram_ub91" for hierarchy "VGA_display:dis|rom1:comb_31101|altsyncram:altsyncram_component|altsyncram_ub91:auto_generated"
 Info: Found 1 design units, including 1 entities, in source file db/decode_b7a.tdf
     Info: Found entity 1: decode_b7a
-Info: Elaborating entity "decode_b7a" for hierarchy "VGA_display:dis|rom1:comb_30121|altsyncram:altsyncram_component|altsyncram_ub91:auto_generated|decode_b7a:rden_decode"
+Info: Elaborating entity "decode_b7a" for hierarchy "VGA_display:dis|rom1:comb_31101|altsyncram:altsyncram_component|altsyncram_ub91:auto_generated|decode_b7a:rden_decode"
 Info: Found 1 design units, including 1 entities, in source file db/mux_tlb.tdf
     Info: Found entity 1: mux_tlb
-Info: Elaborating entity "mux_tlb" for hierarchy "VGA_display:dis|rom1:comb_30121|altsyncram:altsyncram_component|altsyncram_ub91:auto_generated|mux_tlb:mux2"
-Warning: LATCH primitive "VGA_display:dis|score_b[1]" is permanently enabled
-Warning: LATCH primitive "VGA_display:dis|score_b[2]" is permanently enabled
-Warning: LATCH primitive "VGA_display:dis|score_b[3]" is permanently enabled
-Warning: LATCH primitive "VGA_display:dis|score_a[0]" is permanently enabled
-Warning: LATCH primitive "VGA_display:dis|score_a[1]" is permanently enabled
-Warning: LATCH primitive "VGA_display:dis|score_a[2]" is permanently enabled
-Warning: LATCH primitive "VGA_display:dis|score_a[3]" is permanently enabled
-Warning: LATCH primitive "VGA_display:dis|score_b[0]" is permanently enabled
-Info: Inferred 12 megafunctions from design logic
+Info: Elaborating entity "mux_tlb" for hierarchy "VGA_display:dis|rom1:comb_31101|altsyncram:altsyncram_component|altsyncram_ub91:auto_generated|mux_tlb:mux2"
+Info: Inferred 14 megafunctions from design logic
     Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "VGA_display:dis|Mult0"
     Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "VGA_display:dis|Mult1"
     Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA_display:dis|Mod0"
     Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "VGA_display:dis|Mult12"
+    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA_display:dis|Div1"
     Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "VGA_display:dis|Mult32"
     Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA_display:dis|Div0"
+    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA_display:dis|Mod1"
     Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "VGA_display:dis|Mult43"
     Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "VGA_display:dis|Mult44"
     Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "VGA_display:dis|Mult45"
@@ -1722,8 +1898,8 @@ Info: Elaborated megafunction instantiation "VGA_display:dis|lpm_mult:Mult12|mul
 Info: Found 1 design units, including 1 entities, in source file db/add_sub_gfh.tdf
     Info: Found entity 1: add_sub_gfh
 Info: Elaborated megafunction instantiation "VGA_display:dis|lpm_mult:Mult12|altshift:external_latency_ffs", which is child of megafunction instantiation "VGA_display:dis|lpm_mult:Mult12"
-Info: Elaborated megafunction instantiation "VGA_display:dis|lpm_divide:Div0"
-Info: Instantiated megafunction "VGA_display:dis|lpm_divide:Div0" with the following parameter:
+Info: Elaborated megafunction instantiation "VGA_display:dis|lpm_divide:Div1"
+Info: Instantiated megafunction "VGA_display:dis|lpm_divide:Div1" with the following parameter:
     Info: Parameter "LPM_WIDTHN" = "7"
     Info: Parameter "LPM_WIDTHD" = "4"
     Info: Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -1758,11 +1934,11 @@ Info: Elaborated megafunction instantiation "VGA_display:dis|lpm_mult:Mult47|mul
 Info: Elaborated megafunction instantiation "VGA_display:dis|lpm_mult:Mult47|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "VGA_display:dis|lpm_mult:Mult47"
 Info: Elaborated megafunction instantiation "VGA_display:dis|lpm_mult:Mult47|altshift:external_latency_ffs", which is child of megafunction instantiation "VGA_display:dis|lpm_mult:Mult47"
 Warning: Latch VGA_display:dis|addr_res[15] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|level_b[1]
-Warning: Latch VGA_display:dis|addr_res[13] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|VGA_sm:u1|j[9]
+    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|level_b[2]
 Warning: Latch VGA_display:dis|addr_res[14] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|level_b[1]
+    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|VGA_sm:u1|j[9]
+Warning: Latch VGA_display:dis|addr_res[13] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|level_b[2]
 Warning: Latch VGA_display:dis|addr_res[0] has unsafe behavior
     Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|VGA_sm:u1|i[9]
 Warning: Latch VGA_display:dis|addr_res[1] has unsafe behavior
@@ -1778,38 +1954,42 @@ Warning: Latch VGA_display:dis|addr_res[5] has unsafe behavior
 Warning: Latch VGA_display:dis|addr_res[6] has unsafe behavior
     Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|VGA_sm:u1|j[9]
 Warning: Latch VGA_display:dis|addr_res[7] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|level_b[1]
+    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|level_b[2]
 Warning: Latch VGA_display:dis|addr_res[8] has unsafe behavior
     Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|VGA_sm:u1|j[9]
 Warning: Latch VGA_display:dis|addr_res[9] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|level_b[1]
+    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|level_b[2]
 Warning: Latch VGA_display:dis|addr_res[10] has unsafe behavior
     Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|VGA_sm:u1|j[9]
 Warning: Latch VGA_display:dis|addr_res[11] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|level_b[1]
+    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|level_b[2]
 Warning: Latch VGA_display:dis|addr_res[12] has unsafe behavior
     Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|VGA_sm:u1|j[9]
 Warning: Latch VGA_display:dis|level_b[2] has unsafe behavior
     Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|n[2]
 Warning: Latch VGA_display:dis|level_b[3] has unsafe behavior
     Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|n[3]
+Warning: Latch VGA_display:dis|score_b[2] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|m[2]
+Warning: Latch VGA_display:dis|score_b[3] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal VGA_display:dis|m[3]
 Info: Registers with preset signals will power-up high
 Info: DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "ps2_byte[7]" is stuck at GND
 Info: Timing-Driven Synthesis is running
 Info: Generated suppressed messages file D:/zhuangqiu/vga_d.map.smsg
-Info: Implemented 2731 device resources after synthesis - the final resource count might be different
+Info: Implemented 3293 device resources after synthesis - the final resource count might be different
     Info: Implemented 5 input pins
     Info: Implemented 13 output pins
-    Info: Implemented 2685 logic cells
+    Info: Implemented 3247 logic cells
     Info: Implemented 24 RAM segments
     Info: Implemented 4 DSP elements
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 254 warnings
-    Info: Peak virtual memory: 270 megabytes
-    Info: Processing ended: Wed Mar 12 00:30:45 2014
-    Info: Elapsed time: 00:00:37
-    Info: Total CPU time (on all processors): 00:00:40
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 374 warnings
+    Info: Peak virtual memory: 272 megabytes
+    Info: Processing ended: Wed Mar 12 22:41:37 2014
+    Info: Elapsed time: 00:00:36
+    Info: Total CPU time (on all processors): 00:00:37
 
 
 +------------------------------------------+

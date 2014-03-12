@@ -11,23 +11,25 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult42|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gfh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult43|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult44|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_c8m.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult43|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gfh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult44|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult45|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult32|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult42|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult44|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gfh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult45|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult49|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_9gm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult12|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult45|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gfh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult47|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_9gm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult12|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|rom1:comb_31101|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ub91.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult12|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gfh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult32|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult47|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gfh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult49|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|rom1:comb_30121|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ub91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult32|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult42|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult49|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

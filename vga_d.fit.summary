@@ -1,14 +1,14 @@
-Fitter Status : Successful - Tue Mar 11 23:01:14 2014
+Fitter Status : Successful - Wed Mar 12 22:41:59 2014
 Quartus II Version : 9.1 Build 222 10/21/2009 SJ Full Version
 Revision Name : vga_d
 Top-level Entity Name : vga_d
 Family : Cyclone III
 Device : EP3C16F484C6
 Timing Models : Final
-Total logic elements : 1,953 / 15,408 ( 13 % )
-    Total combinational functions : 1,946 / 15,408 ( 13 % )
-    Dedicated logic registers : 214 / 15,408 ( 1 % )
-Total registers : 214
+Total logic elements : 3,238 / 15,408 ( 21 % )
+    Total combinational functions : 3,229 / 15,408 ( 21 % )
+    Dedicated logic registers : 266 / 15,408 ( 2 % )
+Total registers : 266
 Total pins : 18 / 347 ( 5 % )
 Total virtual pins : 0
 Total memory bits : 196,608 / 516,096 ( 38 % )
