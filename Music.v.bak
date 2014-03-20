@@ -1,0 +1,138 @@
+/****************************************
+文件：music.v
+设计：珠联璧合
+描述：演奏《义勇军进行曲》
+日期：2010-12-12
+版本：ver1.0
+邮箱：xlzhu@sohu.com
+****************************************/
+module Music(clk,music_en,Score_Music_En,speaker);
+input clk; //时钟信号，频率为50MHZ
+input music_en; 
+input Score_Music_En;
+output speaker; //蜂鸣器输出
+/**************************************************************
+<音调与频率关系>
+序号： 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+低音：261.6 293.7 329.6 349.2 392 440 493.9
+中音：523.3 587.3 659.3 698.5 784 880 987.8
+高音：1046.5 1174.7 1318.5 1396.9 1568 1760 1975.5
+****************************************************************
+<计数器门限值参数TH=F_clock/2F_tone>
+**************************************************************/
+parameter TH_L1 = 20'd95566;
+parameter TH_L2 = 20'd85121;
+parameter TH_L3 = 20'd75850;
+parameter TH_L4 = 20'd71592;
+parameter TH_L5 = 20'd63776;
+parameter TH_L6 = 20'd56818;
+parameter TH_L7 = 20'd50618;
+parameter TH_M1 = 20'd47774;
+parameter TH_M2 = 20'd42568;
+
+parameter TH_M3 = 20'd37919;
+parameter TH_M4 = 20'd35791;
+parameter TH_M5 = 20'd31887;
+parameter TH_M6 = 20'd28409;
+parameter TH_M7 = 20'd25309;
+parameter TH_H1 = 20'd23889;
+parameter TH_H2 = 20'd21282;
+parameter TH_H3 = 20'd18961;
+parameter TH_H4 = 20'd17897;
+parameter TH_H5 = 20'd15944;
+parameter TH_H6 = 20'd14205;
+parameter TH_H7 = 20'd12655;
+/***************************************************************/
+reg [19:0 ] cnt_tone; //MAX=1048575
+/*********************************************************
+<预置数VALUE=MAX-计算器门限值TH>
+*********************************************************/
+parameter VALUE_MAX = 20'd1048575;
+parameter VALUE_L5 = 20'd984799;
+parameter VALUE_L6 = 20'd991757;
+parameter VALUE_L7 = 20'd997957;
+parameter VALUE_M1 = 20'd1000801;
+parameter VALUE_M2 = 20'd1006007;
+parameter VALUE_M3 = 20'd1010656;
+parameter VALUE_M5 = 20'd1016688;
+parameter VALUE_M6 = 20'd1020166;
+reg speaker;
+reg [19:0] TH_RELOAD;
+always @(posedge clk)
+begin
+	if(music_en)
+		begin
+			cnt_tone <= VALUE_MAX;
+			speaker <= 1'b1;
+		end
+	else
+		
+		begin
+			cnt_tone <= cnt_tone + 20'b1;
+			if(cnt_tone == VALUE_MAX)
+				begin
+					cnt_tone <= TH_RELOAD;
+					speaker <= ~speaker;
+				end
+		end
+end
+reg [23:0] cnt_250ms;
+reg [19:0]music_1;
+reg [19:0]music_2;
+reg [1:0]music_2_cnt;
+always @(posedge clk)
+begin
+	if(music_en)
+		begin
+			cnt_250ms <= 24'b0;
+		end
+	else
+		begin
+			if(cnt_250ms == 24'd5000000)
+				cnt_250ms <= 24'b0;
+			else
+				cnt_250ms <= cnt_250ms + 24'b1;
+		end
+end
+
+reg [8:0] cnt_unit;
+always @(posedge clk)
+begin
+	if(Score_Music_En)
+		begin
+			music_1 <= TH_H3;
+			music_2 <= TH_H5;
+			cnt_unit <= 0;
+		end
+	else if(music_en)
+		begin
+			music_1 <= TH_L1;
+			case(music_2_cnt)
+			2'b00:music_2 <= TH_M2;
+			2'b01:music_2 <= TH_M3;
+			2'b10:music_2 <= TH_M4;
+			2'b11:music_2 <= TH_M5;
+			endcase 
+			cnt_unit <= 0;
+		end
+	else 
+		begin
+			if(cnt_250ms == 24'd5000000)
+				begin
+					cnt_unit <= cnt_unit +1;
+					if(cnt_unit == 2) music_2_cnt <= music_2_cnt + 1;
+					if(cnt_unit == 60) cnt_unit <= 60;
+				end
+		
+		end
+end
+
+always @(cnt_unit)
+begin
+	case(cnt_unit)
+	9'd0:TH_RELOAD = VALUE_MAX - music_1;
+	9'd1:TH_RELOAD = VALUE_MAX - music_2;
+	default:TH_RELOAD = VALUE_MAX;
+	endcase
+end
+endmodule

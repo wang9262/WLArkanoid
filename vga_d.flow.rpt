@@ -1,5 +1,5 @@
 Flow report for vga_d
-Wed Mar 12 22:42:10 2014
+Fri Mar 14 23:51:26 2014
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +------------------------------------+------------------------------------------+
-; Flow Status                        ; Successful - Wed Mar 12 22:42:03 2014    ;
+; Flow Status                        ; Successful - Fri Mar 14 23:50:56 2014    ;
 ; Quartus II Version                 ; 9.1 Build 222 10/21/2009 SJ Full Version ;
 ; Revision Name                      ; vga_d                                    ;
 ; Top-level Entity Name              ; vga_d                                    ;
@@ -46,14 +46,14 @@ applicable agreement for further details.
 ; Device                             ; EP3C16F484C6                             ;
 ; Timing Models                      ; Final                                    ;
 ; Met timing requirements            ; N/A                                      ;
-; Total logic elements               ; 3,238 / 15,408 ( 21 % )                  ;
-;     Total combinational functions  ; 3,229 / 15,408 ( 21 % )                  ;
-;     Dedicated logic registers      ; 266 / 15,408 ( 2 % )                     ;
-; Total registers                    ; 266                                      ;
-; Total pins                         ; 18 / 347 ( 5 % )                         ;
+; Total logic elements               ; 8,477 / 15,408 ( 55 % )                  ;
+;     Total combinational functions  ; 8,460 / 15,408 ( 55 % )                  ;
+;     Dedicated logic registers      ; 446 / 15,408 ( 3 % )                     ;
+; Total registers                    ; 446                                      ;
+; Total pins                         ; 21 / 347 ( 6 % )                         ;
 ; Total virtual pins                 ; 0                                        ;
 ; Total memory bits                  ; 196,608 / 516,096 ( 38 % )               ;
-; Embedded Multiplier 9-bit elements ; 4 / 112 ( 4 % )                          ;
+; Embedded Multiplier 9-bit elements ; 112 / 112 ( 100 % )                      ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                            ;
 +------------------------------------+------------------------------------------+
 
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/12/2014 22:41:01 ;
+; Start date & time ; 03/14/2014 23:48:25 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; vga_d               ;
 +-------------------+---------------------+
@@ -74,14 +74,15 @@ applicable agreement for further details.
 +------------------------------------+------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                                          ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 108680273996690.139463526103640                ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 268749064610118.139481210511244                ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; ROM: 1-PORT                                    ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                                            ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP             ; 85                                             ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP             ; 0                                              ; --            ; --          ; --             ;
 ; MISC_FILE                          ; C:/Users/Chen yue/Desktop/zhuangqiu2/vga_d.dpf ; --            ; --          ; --             ;
-; MISC_FILE                          ; rom1_bb.v                                      ; --            ; --          ; --             ;
 ; MISC_FILE                          ; D:/zhuangqiu/vga_d.dpf                         ; --            ; --          ; --             ;
+; MISC_FILE                          ; C:/Users/Chen yue/Desktop/zuihouheji/vga_d.dpf ; --            ; --          ; --             ;
+; MISC_FILE                          ; rom1_bb.v                                      ; --            ; --          ; --             ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE        ; 1.2V                                           ; --            ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                                       ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                                         ; --            ; --          ; Top            ;
@@ -94,11 +95,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:36     ; 1.0                     ; 272 MB              ; 00:00:37                           ;
-; Fitter                    ; 00:00:21     ; 1.6                     ; 357 MB              ; 00:00:24                           ;
-; TimeQuest Timing Analyzer ; 00:00:09     ; 1.2                     ; 268 MB              ; 00:00:09                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 238 MB              ; 00:00:02                           ;
-; Total                     ; 00:01:06     ; --                      ; --                  ; 00:01:10                           ;
+; Analysis & Synthesis      ; 00:01:29     ; 1.0                     ; 331 MB              ; 00:01:30                           ;
+; Fitter                    ; 00:00:52     ; 1.5                     ; 374 MB              ; 00:01:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:35     ; 1.2                     ; 298 MB              ; 00:00:36                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 250 MB              ; 00:00:05                           ;
+; Total                     ; 00:02:56     ; --                      ; --                  ; 00:03:08                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -107,10 +108,10 @@ applicable agreement for further details.
 +---------------------------+------------------+---------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
 +---------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis      ; WangM            ; Windows Vista ; 6.2        ; x86_64         ;
-; Fitter                    ; WangM            ; Windows Vista ; 6.2        ; x86_64         ;
-; Assembler                 ; WangM            ; Windows Vista ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; WangM            ; Windows Vista ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; CHENYUE          ; Windows Vista ; 6.0        ; i686           ;
+; Fitter                    ; CHENYUE          ; Windows Vista ; 6.0        ; i686           ;
+; Assembler                 ; CHENYUE          ; Windows Vista ; 6.0        ; i686           ;
+; TimeQuest Timing Analyzer ; CHENYUE          ; Windows Vista ; 6.0        ; i686           ;
 +---------------------------+------------------+---------------+------------+----------------+
 
 

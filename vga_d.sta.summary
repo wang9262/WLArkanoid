@@ -2,68 +2,100 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1200mV 85C Model Setup 'VGA_display:dis|lgs.01'
+Slack : -20.149
+TNS   : -70.463
+
 Type  : Slow 1200mV 85C Model Setup 'CLK'
-Slack : -10.162
-TNS   : -336.604
-
-Type  : Slow 1200mV 85C Model Setup 'VGA_display:dis|VGA_sm:u1|i[2]'
-Slack : -9.553
-TNS   : -125.858
-
-Type  : Slow 1200mV 85C Model Setup 'VGA_display:dis|m[2]'
-Slack : -8.760
-TNS   : -53.918
-
-Type  : Slow 1200mV 85C Model Setup 'VGA_display:dis|clk_25M_res'
-Slack : -8.707
-TNS   : -413.145
+Slack : -19.950
+TNS   : -1414.575
 
 Type  : Slow 1200mV 85C Model Setup 'VGA_display:dis|n[2]'
-Slack : -8.181
-TNS   : -45.576
+Slack : -16.053
+TNS   : -90.575
 
-Type  : Slow 1200mV 85C Model Setup 'VGA_display:dis|a'
-Slack : -4.414
-TNS   : -21.891
+Type  : Slow 1200mV 85C Model Setup 'VGA_display:dis|VGA_sm:u1|i[2]'
+Slack : -10.280
+TNS   : -132.451
+
+Type  : Slow 1200mV 85C Model Setup 'VGA_display:dis|m[2]'
+Slack : -8.326
+TNS   : -46.993
+
+Type  : Slow 1200mV 85C Model Setup 'VGA_display:dis|clk_25M_res'
+Slack : -8.235
+TNS   : -396.430
+
+Type  : Slow 1200mV 85C Model Setup 'VGA_display:dis|lblock1_x[23]'
+Slack : -6.780
+TNS   : -6.780
 
 Type  : Slow 1200mV 85C Model Setup 'clk_25M'
-Slack : -3.561
-TNS   : -175.884
+Slack : -5.840
+TNS   : -257.613
 
 Type  : Slow 1200mV 85C Model Setup 'clk_in'
-Slack : -2.682
-TNS   : -116.410
+Slack : -2.919
+TNS   : -127.529
+
+Type  : Slow 1200mV 85C Model Setup 'VGA_display:dis|a'
+Slack : -1.202
+TNS   : -5.372
+
+Type  : Slow 1200mV 85C Model Setup 'VGA_display:dis|ly_dir3'
+Slack : -0.960
+TNS   : -5.630
+
+Type  : Slow 1200mV 85C Model Hold 'VGA_display:dis|lgs.01'
+Slack : -2.405
+TNS   : -8.397
+
+Type  : Slow 1200mV 85C Model Hold 'VGA_display:dis|lblock1_x[23]'
+Slack : -1.589
+TNS   : -1.589
 
 Type  : Slow 1200mV 85C Model Hold 'VGA_display:dis|VGA_sm:u1|i[2]'
-Slack : -2.474
-TNS   : -30.414
-
-Type  : Slow 1200mV 85C Model Hold 'VGA_display:dis|a'
-Slack : -0.599
-TNS   : -1.609
+Slack : -1.562
+TNS   : -8.659
 
 Type  : Slow 1200mV 85C Model Hold 'CLK'
-Slack : -0.442
-TNS   : -1.540
-
-Type  : Slow 1200mV 85C Model Hold 'clk_in'
-Slack : -0.117
-TNS   : -0.250
+Slack : -1.236
+TNS   : -11.694
 
 Type  : Slow 1200mV 85C Model Hold 'VGA_display:dis|n[2]'
-Slack : 0.132
-TNS   : 0.000
+Slack : -0.583
+TNS   : -1.612
+
+Type  : Slow 1200mV 85C Model Hold 'clk_in'
+Slack : -0.108
+TNS   : -0.120
+
+Type  : Slow 1200mV 85C Model Hold 'VGA_display:dis|a'
+Slack : -0.061
+TNS   : -0.120
 
 Type  : Slow 1200mV 85C Model Hold 'VGA_display:dis|clk_25M_res'
-Slack : 0.201
+Slack : -0.044
+TNS   : -0.086
+
+Type  : Slow 1200mV 85C Model Hold 'clk_25M'
+Slack : 0.041
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'VGA_display:dis|m[2]'
-Slack : 0.324
+Slack : 0.088
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'clk_25M'
-Slack : 0.337
+Type  : Slow 1200mV 85C Model Hold 'VGA_display:dis|ly_dir3'
+Slack : 0.342
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'VGA_display:dis|lblock1_x[23]'
+Slack : -11.175
+TNS   : -11.175
+
+Type  : Slow 1200mV 85C Model Removal 'VGA_display:dis|lblock1_x[23]'
+Slack : 1.381
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_in'
@@ -74,92 +106,136 @@ Type  : Slow 1200mV 85C Model Minimum Pulse Width 'VGA_display:dis|clk_25M_res'
 Slack : -2.174
 TNS   : -174.352
 
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -1.000
+TNS   : -234.000
+
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_25M'
 Slack : -1.000
 TNS   : -66.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'VGA_display:dis|ly_dir3'
 Slack : -1.000
-TNS   : -63.000
+TNS   : -9.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'VGA_display:dis|a'
 Slack : -1.000
 TNS   : -7.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'VGA_display:dis|VGA_sm:u1|i[2]'
-Slack : -0.089
-TNS   : -2.269
+Slack : -0.086
+TNS   : -2.546
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'VGA_display:dis|n[2]'
-Slack : 0.372
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'VGA_display:dis|lgs.01'
+Slack : 0.300
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'VGA_display:dis|m[2]'
-Slack : 0.399
+Slack : 0.378
 TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'VGA_display:dis|n[2]'
+Slack : 0.396
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'VGA_display:dis|lblock1_x[23]'
+Slack : 0.411
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'VGA_display:dis|lgs.01'
+Slack : -18.008
+TNS   : -63.019
 
 Type  : Slow 1200mV 0C Model Setup 'CLK'
-Slack : -9.024
-TNS   : -296.197
-
-Type  : Slow 1200mV 0C Model Setup 'VGA_display:dis|VGA_sm:u1|i[2]'
-Slack : -8.422
-TNS   : -111.006
-
-Type  : Slow 1200mV 0C Model Setup 'VGA_display:dis|m[2]'
-Slack : -7.734
-TNS   : -47.539
-
-Type  : Slow 1200mV 0C Model Setup 'VGA_display:dis|clk_25M_res'
-Slack : -7.671
-TNS   : -360.327
+Slack : -17.594
+TNS   : -1245.303
 
 Type  : Slow 1200mV 0C Model Setup 'VGA_display:dis|n[2]'
-Slack : -7.196
-TNS   : -39.830
+Slack : -14.423
+TNS   : -80.202
 
-Type  : Slow 1200mV 0C Model Setup 'VGA_display:dis|a'
-Slack : -3.814
-TNS   : -18.872
+Type  : Slow 1200mV 0C Model Setup 'VGA_display:dis|VGA_sm:u1|i[2]'
+Slack : -9.263
+TNS   : -118.680
+
+Type  : Slow 1200mV 0C Model Setup 'VGA_display:dis|m[2]'
+Slack : -7.317
+TNS   : -41.238
+
+Type  : Slow 1200mV 0C Model Setup 'VGA_display:dis|clk_25M_res'
+Slack : -7.227
+TNS   : -344.120
+
+Type  : Slow 1200mV 0C Model Setup 'VGA_display:dis|lblock1_x[23]'
+Slack : -6.130
+TNS   : -6.130
 
 Type  : Slow 1200mV 0C Model Setup 'clk_25M'
-Slack : -3.100
-TNS   : -149.424
+Slack : -5.227
+TNS   : -227.522
 
 Type  : Slow 1200mV 0C Model Setup 'clk_in'
-Slack : -2.352
-TNS   : -100.480
+Slack : -2.522
+TNS   : -108.815
+
+Type  : Slow 1200mV 0C Model Setup 'VGA_display:dis|a'
+Slack : -0.969
+TNS   : -4.093
+
+Type  : Slow 1200mV 0C Model Setup 'VGA_display:dis|ly_dir3'
+Slack : -0.748
+TNS   : -4.144
+
+Type  : Slow 1200mV 0C Model Hold 'VGA_display:dis|lgs.01'
+Slack : -2.077
+TNS   : -7.238
+
+Type  : Slow 1200mV 0C Model Hold 'VGA_display:dis|lblock1_x[23]'
+Slack : -1.384
+TNS   : -1.384
 
 Type  : Slow 1200mV 0C Model Hold 'VGA_display:dis|VGA_sm:u1|i[2]'
-Slack : -2.007
-TNS   : -23.927
-
-Type  : Slow 1200mV 0C Model Hold 'VGA_display:dis|a'
-Slack : -0.498
-TNS   : -1.490
+Slack : -1.185
+TNS   : -4.937
 
 Type  : Slow 1200mV 0C Model Hold 'CLK'
-Slack : -0.436
-TNS   : -1.538
-
-Type  : Slow 1200mV 0C Model Hold 'clk_in'
-Slack : -0.144
-TNS   : -0.299
+Slack : -1.097
+TNS   : -10.196
 
 Type  : Slow 1200mV 0C Model Hold 'VGA_display:dis|n[2]'
-Slack : 0.119
-TNS   : 0.000
+Slack : -0.487
+TNS   : -1.169
+
+Type  : Slow 1200mV 0C Model Hold 'clk_in'
+Slack : -0.108
+TNS   : -0.216
+
+Type  : Slow 1200mV 0C Model Hold 'VGA_display:dis|a'
+Slack : -0.072
+TNS   : -0.137
 
 Type  : Slow 1200mV 0C Model Hold 'VGA_display:dis|clk_25M_res'
-Slack : 0.211
-TNS   : 0.000
+Slack : -0.020
+TNS   : -0.033
 
 Type  : Slow 1200mV 0C Model Hold 'clk_25M'
-Slack : 0.291
+Slack : 0.039
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'VGA_display:dis|m[2]'
-Slack : 0.294
+Slack : 0.077
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'VGA_display:dis|ly_dir3'
+Slack : 0.301
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'VGA_display:dis|lblock1_x[23]'
+Slack : -10.006
+TNS   : -10.006
+
+Type  : Slow 1200mV 0C Model Removal 'VGA_display:dis|lblock1_x[23]'
+Slack : 1.370
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_in'
@@ -170,97 +246,145 @@ Type  : Slow 1200mV 0C Model Minimum Pulse Width 'VGA_display:dis|clk_25M_res'
 Slack : -2.174
 TNS   : -174.352
 
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -1.000
+TNS   : -234.000
+
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_25M'
 Slack : -1.000
 TNS   : -66.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'VGA_display:dis|ly_dir3'
 Slack : -1.000
-TNS   : -63.000
+TNS   : -9.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'VGA_display:dis|a'
 Slack : -1.000
 TNS   : -7.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'VGA_display:dis|VGA_sm:u1|i[2]'
-Slack : 0.164
+Slack : 0.149
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'VGA_display:dis|n[2]'
-Slack : 0.463
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'VGA_display:dis|lblock1_x[23]'
+Slack : 0.395
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'VGA_display:dis|lgs.01'
+Slack : 0.405
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'VGA_display:dis|m[2]'
-Slack : 0.472
+Slack : 0.458
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'VGA_display:dis|n[2]'
+Slack : 0.476
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'CLK'
-Slack : -5.264
-TNS   : -167.941
+Slack : -11.150
+TNS   : -721.813
 
-Type  : Fast 1200mV 0C Model Setup 'VGA_display:dis|VGA_sm:u1|i[2]'
-Slack : -5.027
-TNS   : -67.082
-
-Type  : Fast 1200mV 0C Model Setup 'VGA_display:dis|clk_25M_res'
-Slack : -5.016
-TNS   : -193.360
-
-Type  : Fast 1200mV 0C Model Setup 'VGA_display:dis|m[2]'
-Slack : -4.502
-TNS   : -27.548
+Type  : Fast 1200mV 0C Model Setup 'VGA_display:dis|lgs.01'
+Slack : -11.006
+TNS   : -38.514
 
 Type  : Fast 1200mV 0C Model Setup 'VGA_display:dis|n[2]'
-Slack : -4.138
-TNS   : -22.377
+Slack : -8.883
+TNS   : -47.518
 
-Type  : Fast 1200mV 0C Model Setup 'VGA_display:dis|a'
-Slack : -2.211
-TNS   : -10.647
+Type  : Fast 1200mV 0C Model Setup 'VGA_display:dis|VGA_sm:u1|i[2]'
+Slack : -5.581
+TNS   : -72.749
+
+Type  : Fast 1200mV 0C Model Setup 'VGA_display:dis|clk_25M_res'
+Slack : -4.637
+TNS   : -180.914
+
+Type  : Fast 1200mV 0C Model Setup 'VGA_display:dis|m[2]'
+Slack : -4.215
+TNS   : -23.102
+
+Type  : Fast 1200mV 0C Model Setup 'VGA_display:dis|lblock1_x[23]'
+Slack : -3.719
+TNS   : -3.719
 
 Type  : Fast 1200mV 0C Model Setup 'clk_25M'
-Slack : -1.619
-TNS   : -73.682
+Slack : -2.959
+TNS   : -123.597
 
 Type  : Fast 1200mV 0C Model Setup 'clk_in'
-Slack : -1.020
-TNS   : -39.536
+Slack : -1.176
+TNS   : -46.691
+
+Type  : Fast 1200mV 0C Model Setup 'VGA_display:dis|a'
+Slack : -0.226
+TNS   : -0.607
+
+Type  : Fast 1200mV 0C Model Setup 'VGA_display:dis|ly_dir3'
+Slack : -0.084
+TNS   : -0.152
+
+Type  : Fast 1200mV 0C Model Hold 'VGA_display:dis|lgs.01'
+Slack : -1.464
+TNS   : -5.220
+
+Type  : Fast 1200mV 0C Model Hold 'VGA_display:dis|lblock1_x[23]'
+Slack : -1.028
+TNS   : -1.028
 
 Type  : Fast 1200mV 0C Model Hold 'VGA_display:dis|VGA_sm:u1|i[2]'
-Slack : -1.502
-TNS   : -19.712
-
-Type  : Fast 1200mV 0C Model Hold 'VGA_display:dis|a'
-Slack : -0.439
-TNS   : -1.067
+Slack : -0.997
+TNS   : -6.265
 
 Type  : Fast 1200mV 0C Model Hold 'CLK'
-Slack : -0.335
-TNS   : -1.533
-
-Type  : Fast 1200mV 0C Model Hold 'clk_in'
-Slack : -0.138
-TNS   : -0.339
-
-Type  : Fast 1200mV 0C Model Hold 'VGA_display:dis|clk_25M_res'
-Slack : 0.038
-TNS   : 0.000
+Slack : -0.766
+TNS   : -7.960
 
 Type  : Fast 1200mV 0C Model Hold 'VGA_display:dis|n[2]'
-Slack : 0.089
-TNS   : 0.000
+Slack : -0.466
+TNS   : -1.222
+
+Type  : Fast 1200mV 0C Model Hold 'clk_in'
+Slack : -0.156
+TNS   : -0.179
+
+Type  : Fast 1200mV 0C Model Hold 'VGA_display:dis|clk_25M_res'
+Slack : -0.138
+TNS   : -0.505
+
+Type  : Fast 1200mV 0C Model Hold 'VGA_display:dis|a'
+Slack : -0.044
+TNS   : -0.085
 
 Type  : Fast 1200mV 0C Model Hold 'clk_25M'
-Slack : 0.166
-TNS   : 0.000
+Slack : -0.023
+TNS   : -0.043
 
 Type  : Fast 1200mV 0C Model Hold 'VGA_display:dis|m[2]'
-Slack : 0.186
+Slack : 0.044
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'VGA_display:dis|ly_dir3'
+Slack : 0.174
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'VGA_display:dis|lblock1_x[23]'
+Slack : -6.169
+TNS   : -6.169
+
+Type  : Fast 1200mV 0C Model Removal 'VGA_display:dis|lblock1_x[23]'
+Slack : 0.645
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_in'
 Slack : -3.000
-TNS   : -66.350
+TNS   : -66.393
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -1.000
+TNS   : -234.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'VGA_display:dis|clk_25M_res'
 Slack : -1.000
@@ -270,24 +394,32 @@ Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_25M'
 Slack : -1.000
 TNS   : -66.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'VGA_display:dis|ly_dir3'
 Slack : -1.000
-TNS   : -63.000
+TNS   : -9.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'VGA_display:dis|a'
 Slack : -1.000
 TNS   : -7.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'VGA_display:dis|VGA_sm:u1|i[2]'
-Slack : -0.145
-TNS   : -4.391
+Slack : -0.088
+TNS   : -2.662
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'VGA_display:dis|lgs.01'
+Slack : 0.258
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'VGA_display:dis|n[2]'
-Slack : 0.297
+Slack : 0.318
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'VGA_display:dis|m[2]'
-Slack : 0.332
+Slack : 0.322
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'VGA_display:dis|lblock1_x[23]'
+Slack : 0.376
 TNS   : 0.000
 
 ------------------------------------------------------------

@@ -1,7 +1,7 @@
-module vga_d(clk_in,reset,level,ps2k_clk,ps2k_data,red,grn,blu,hs,vs,ps2_byte);
+module vga_d(clk_in,reset,level,ps2k_clk,ps2k_data,red,grn,blu,hs,vs,ps2_byte,speaker,bouncetest,scoretest);
     input clk_in,reset,ps2k_clk,ps2k_data,level;
     output red,grn;
-    output blu;
+    output blu,bouncetest,scoretest;
     output hs,vs;
     output [7:0]ps2_byte;
     wire [7:0]ps2_byte;
@@ -10,6 +10,7 @@ module vga_d(clk_in,reset,level,ps2k_clk,ps2k_data,red,grn,blu,hs,vs,ps2_byte);
     assign hs=hs1,vs=vs1;
     wire [9:0]hortional_counter;
 	wire [9:0] vertiacl_counter; 
+	output speaker;
 ///////////////////////////////// 
 reg CLK;
 integer i;
@@ -59,6 +60,9 @@ always @(posedge clk_in or posedge reset)
 			.BLU(blu),
 			.hortional_counter(hortional_counter),
 			.vertiacl_counter(vertiacl_counter),
+			.speaker(speaker),
+			.bouncetest(bouncetest),
+			.scoretest(scoretest)
           );
-    
+   
 endmodule

@@ -1,35 +1,86 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="vga_d">
-		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult0" CBX_FILE_NAME="mult_g4t.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult32|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gfh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult42|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult43|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult49|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult50|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult53" CBX_FILE_NAME="mult_u4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult42|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult44|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult54" CBX_FILE_NAME="mult_u4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult72" CBX_FILE_NAME="mult_g4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult89|mult_g4t:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_18h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult90" CBX_FILE_NAME="mult_g4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult45|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult55" CBX_FILE_NAME="mult_u4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult44|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult56" CBX_FILE_NAME="mult_u4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult47|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult57" CBX_FILE_NAME="mult_u4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult58" CBX_FILE_NAME="mult_u4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult67" CBX_FILE_NAME="mult_g4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult76" CBX_FILE_NAME="mult_g4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult85" CBX_FILE_NAME="mult_g4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult47|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult59" CBX_FILE_NAME="mult_u4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult68" CBX_FILE_NAME="mult_g4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult72|mult_g4t:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_fq82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult86" CBX_FILE_NAME="mult_g4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult90|mult_g4t:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_fq82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult69" CBX_FILE_NAME="mult_g4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult78" CBX_FILE_NAME="mult_g4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult87" CBX_FILE_NAME="mult_g4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult0" CBX_FILE_NAME="mult_g4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult83|mult_g4t:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_fq82.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_c8m.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult1" CBX_FILE_NAME="mult_g4t.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult42|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gfh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult43|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult44|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult72|mult_g4t:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_18h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult84|mult_g4t:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_fq82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult89" CBX_FILE_NAME="mult_g4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult90|mult_g4t:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_18h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|rom1:comb_32104|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ub91.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_c8m.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult43|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gfh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult44|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult45|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult44|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gfh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult45|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult76|mult_g4t:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_fq82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult85|mult_g4t:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_fq82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult83|mult_g4t:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_18h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult86|mult_g4t:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_fq82.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_9gm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult12|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult45|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gfh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult47|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult84|mult_g4t:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_18h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult87|mult_g4t:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_fq82.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_9gm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult12|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|rom1:comb_31101|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ub91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult76|mult_g4t:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_18h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult85|mult_g4t:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_18h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_divide:Div2" CBX_FILE_NAME="lpm_divide_ohm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult12|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gfh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult32|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult47|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gfh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult49|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult50|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult51" CBX_FILE_NAME="mult_u4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult60" CBX_FILE_NAME="mult_u4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult86|mult_g4t:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_18h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult89|mult_g4t:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_fq82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_divide:Div3" CBX_FILE_NAME="lpm_divide_ohm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult32|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult42|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult49|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult50|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult52" CBX_FILE_NAME="mult_u4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult61" CBX_FILE_NAME="mult_u4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult70" CBX_FILE_NAME="mult_g4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult87|mult_g4t:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_18h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult42|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult62" CBX_FILE_NAME="mult_u4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult43|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult63" CBX_FILE_NAME="mult_u4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult43|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult44|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult64" CBX_FILE_NAME="mult_u4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult82" CBX_FILE_NAME="mult_g4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult45|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_cfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult65" CBX_FILE_NAME="mult_u4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult83" CBX_FILE_NAME="mult_g4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult45|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_gfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult66" CBX_FILE_NAME="mult_u4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_d|VGA_display:dis|lpm_mult:Mult84" CBX_FILE_NAME="mult_g4t.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

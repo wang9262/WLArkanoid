@@ -1,0 +1,12 @@
+
+State Machine - |vga_d|VGA_display:dis|lgs3
+Name lgs3.00 lgs3.10 lgs3.01 
+lgs3.00 0 0 0 
+lgs3.01 1 0 1 
+lgs3.10 1 1 0 
+
+State Machine - |vga_d|VGA_display:dis|lgs
+Name lgs.00 lgs.10 lgs.01 
+lgs.00 0 0 0 
+lgs.01 1 0 1 
+lgs.10 1 1 0 
