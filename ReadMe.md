@@ -2,9 +2,9 @@
 ---
 This is a Arkanoid-liked Game which is written in Verilog HDL.The game has 4 levels,the 1st is the common one which has 18 blocks,and when the ball hits the block,the score will add 1 point automatically;the 2nd has 4 blocks,each time the ball hits the block, the block will changes its color,and after 4 times,it will disappear;the 3rd is PVP mode(player vs player),there are two boards which present two players,when the ball go beyond the board's scope,the player fail;the 4th is PVC mode(Player vs computer),this is similar to the 3rd one.
 
-It's a curriculum design of mine.It mainly contains these files that include the key code.They are as follows. 
+Additionally,this project is based on FPGA development Board DE0 board,and compiled in Quartus II 9.1. 
 
-Additionally,this project is based on DE0 board,and compiled in Quartus II 9.1. 
+It's a curriculum design of mine.It mainly contains these files that include the key code.They are as follows. 
 ####1.vga_d.v
 This is the top file,which calls all the blockette,include ps2_top(designed for ps/2 keyboard),VGA_sm(designed for scanning),VGA_display(to display all the things that shoud be displayed).By the way,the files rom1.v,rom1_bb.v are generated automatically.
 ####2.VGA_sm.v
@@ -19,9 +19,9 @@ Because of the little time,we completed this Arkanoid-liked game summarily,and m
 If you have some problems during using this,please contact me,and my Email is mygoagent208@gmail.com.
 
 ###简介
-这是一个打砖块的游戏,是我的一个课设作业,游戏分为四关,第一关是普通模式;第二关为变色模式,一共四块砖,每碰一下,砖块颜色改变一次,改变四次颜色后自动消失;第三关为人人对战模式;第四关为人机对战模式.
+这是一个打砖块的游戏,是基于Verilog的,是我的一个课设作业.游戏分为四关,第一关是普通模式;第二关为变色模式,一共四块砖,每碰一下,砖块颜色改变一次,改变四次颜色后自动消失;第三关为人人对战模式;第四关为人机对战模式.
 
-这个游戏是基于FPGA DE0开发板的,在QuartusII9.1环境下编译的.
+这个游戏是基于FPGA DE0开发板的,在QuartusII 9.1 环境下编译的.
 
 工程中,包含核心代码的主体文件大致如下.
 ####1.vga_d.v
